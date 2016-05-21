@@ -1,0 +1,19 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="{{ asset("script/messages.js") }}"></script>
+{% set foo = 0 %}
+{% for conv in allConv %}
+    {{ conv|raw }}
+    <form method="post" class="send">
+        <input type="hidden" name="destinataire" value="{{ user[foo] }}"><br>
+        {% set foo=foo+1 %}
+        <input type="text" name="body" placeholder="body"><br>
+        <input type="submit" value="send" name="send">
+    </form>
+{% endfor %}
+
+<form method="post" id="form_new">
+    <input type="text" name="destinataire" placeholder="destinataire"><br>
+    <input type="text" name="body" placeholder="body"><br>
+    <input type="submit" value="send" name="send">
+</form>
+

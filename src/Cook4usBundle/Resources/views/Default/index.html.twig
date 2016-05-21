@@ -1,0 +1,161 @@
+{% block head %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Accueil{% endblock %}</title>
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/flickity.css') }}">
+    <script src="{{ asset('js/flickity.pkgd.min.js') }}"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <script src="{{ asset('js/jquery.js') }}"></script>
+    <script src="{{ asset('js/jquery.reflection.js') }}"></script>
+    <script src="{{ asset('js/jquery.cloud9carousel.js') }}"></script>
+    <script src="{{ asset('js/carousel.js') }}"></script>
+</head>
+
+
+{% endblock %}
+
+{% block container %}
+    <body>
+    <section class="top">
+
+        <section class="menuTablet">
+            <ul>
+                <li>COMMENT ÇA MARCHE ?</li>
+                <li>NOTRE ÉQUIPE</li>
+                <li><img src="{{ asset('img/logoTablette.png') }}"</li>
+                <li>CONNEXION</li>
+                <li>
+                    <button class="chiefTab">DEVENIR CHEF</button>
+                </li>
+            </ul>
+        </section>
+
+        <button class="chief">DEVENIR CHEF</button>
+        <ul class="menu">
+            <a href="#">
+                <li></li>
+                <li></li>
+                <li></li>
+            </a>
+        </ul>
+        <div class="logo"><img src="{{ asset('img/logo.png') }}"></div>
+        <p class="topText">Ne vous occupez plus<br> jamais du dîner, laissez<br>
+            nos cookists s'en charger.</p>
+        <p class="topTextTablet">NE VOUS OCCUPEZ PLUS JAMAIS <br> DU DÎNER, LAISSEZ NOS COOKISTS<br>
+            S'EN CHARGER.</p><br>
+
+        <input type="search" class="cookType" placeholder="Type de cuisine">
+        <button class="cookTypeSubmit"><i class="fa fa-search" aria-hidden="true"></i></button>
+        <input type="search" class="topInputTab1" placeholder="Type de cuisine"><input type="search"
+                                                                                       class="topInputTab2"
+                                                                                       placeholder="Nombre de personnes">
+        <input type="search" class="topInputTab3" placeholder="Prix">
+        <input type="submit" class="topSubmitTablet" value="Recherche">
+
+    </section>
+
+    <section class="cookist">
+        <ul class="findTab">
+            <li><img src="{{ asset('img/cook4us-tablette_81.png') }}">Bordel de merde</li>
+            <li><img src="{{ asset('img/cook4us-tablette_80.png') }}">putain</li>
+            <li><img src="{{ asset('img/cook4us-tablette_09.png') }}">connard</li>
+            <li><img src="{{ asset('img/cook4us-tablette_82.png') }}">de merde</li>
+        </ul>
+
+        <div class="gallery js-flickity">
+            <div class="gallery-cell">
+                <p class="find"> TROUVEZ LE COOKIST QUI VOUS CORRESPOND </p>
+                <img src="{{ asset('img/cook4us-tablette_81.png') }}">
+                <p class="choose">CHOISISSEZ VOTRE TYPE DE CUISINE</p>
+            </div>
+            <div class="gallery-cell">
+                <p class="find"> TROUVEZ LE COOKIST QUI VOUS CORRESPOND</p>
+                <img src="{{ asset('img/cook4us-tablette_80.png') }}">
+                <p class="choose">CHERCHEZ LE COOKIST ADAPTÉ</p>
+            </div>
+            <div class="gallery-cell">
+                <p class="find"> TROUVEZ LE COOKIST QUI VOUS CORRESPOND</p>
+                <img src="{{ asset('img/cook4us-tablette_09.png') }}">
+                <p class="choose">IL CUISINE POUR VOUS</p>
+            </div>
+            <div class="gallery-cell">
+                <p class="find"> TROUVEZ LE COOKIST QUI VOUS CORRESPOND</p>
+                <img src="{{ asset('img/cook4us-tablette_82.png') }}">
+                <p class="choose">PAIEMENT VIA LE SITE OU L'APPLI</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="imgPeople">
+
+        <img src="{{ asset('img/People1.png') }}">
+        <p class="pStyle">Japan style</p>
+        <p class="pMenu">8 menus disponibles</p>
+
+    </section>
+
+    <section class="imgPeople2">
+        <img src="{{ asset('img/People2.png') }}">
+        <p class="pStyle">Le plaisir français</p>
+        <p class="pMenu">5 menus disponibles</p>
+    </section>
+
+    <section class="imgPeople3">
+        <img src="{{ asset('img/People3.png') }}">
+        <p class="pStyle">Pas qu'un sandwich</p>
+        <p class="pMenu">6 menus disponibles</p>
+
+    </section>
+
+    <section class="imgPeople4">
+        <img src="{{ asset('img/People4.png') }}">
+        <p class="pStyle">Meat avant tout</p>
+        <p class="pMenu">3 menus disponibles</p>
+
+    </section>
+
+    <section class="discover">
+        <p class="pTypeCook"> Venez découvrir tous nos types de cuisine et cocktails</p><br>
+        <p class="pWant"> De quoi avez-vous envie aujourd'hui ?</p>
+        <div id="showcase" class="noselect">
+            <img class="cloud9-item" src="{{ asset('img/1.png') }}" alt="Firefox">
+            <img class="cloud9-item" src="{{ asset('img/2.png') }}" alt="Wyzo">
+            <img class="cloud9-item" src="{{ asset('img/3.png') }}" alt="Opera">
+            <img class="cloud9-item" src="{{ asset('img/4.png') }}" alt="Chrome">
+            <img class="cloud9-item" src="{{ asset('img/5.png') }}" alt="Internet Explorer">
+            <img class="cloud9-item" src="{{ asset('img/6.png') }}" alt="Safari">
+            <img class="cloud9-item" src="{{ asset('img/7.png') }}" alt="Safari">
+        </div>
+        <p class="pCocktail"> Dégustez un cocktail entre amis</p>
+        <div class="pDiscover"> DÉCOUVRIR</div>
+    </section>
+
+    <section class="grossery">
+        <p class="pGrossery1">ET VOUS SAVEZ QUOI ?</p>
+        <p class="pGrossery2"> NOS COOKIST FONT MÊME LES COURSES</p>
+        <p class="pGrossery3"> Vous n'avez pas le temps de faire les courses pour vos invités ? Pas de panique !<br>
+            En plus de se charger du dîner, nos cookists prennent le temps d'acheter tous les ingrédients
+            nécessaires
+            à la préparation de leurs plats.</p>
+        <p class="pGrossery4"> Allez, vous pouvez souffler ! </p>
+    </section>
+
+    <section class="certified">
+        <img src="{{ asset('img/IconeCertified.png') }}" alt="certified">
+        <h1> NOS COOKIST SONT CERTIFIÉS !</h1>
+        <p> La plupart de <span>nos cookists sont certifés</span>, ils suivent une formation à leur inscription afin
+            d'être
+            conscient des normes de sécurité et d'hygiène. Une petite icone apparaîtra sur leur profil afin
+            que vous puissiez les différencier des autres cookists n'ayant pas suivi la formation.</p>
+        <p> Faites-leur confiance ! </p>
+
+    </section>
+    </body>
+
+{% endblock %}
+</html>

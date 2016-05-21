@@ -1,0 +1,11 @@
+cook4us_homepage:
+    path:     /
+    defaults: { _controller: Cook4usBundle:Index:index }
+
+cook4us_working:
+    path: /working
+    defaults: { _controller: Cook4usBundle:Index:working }
+
+cook4us_hygiene:
+    path: /hygiene
+    defaults: { _controller: Cook4usBundle:Index:hygiene }

@@ -1,0 +1,28 @@
+EntityBundle\Entity\Food:
+    type: entity
+    table: null
+    repositoryClass: EntityBundle\Repository\FoodRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        idChief:
+            type: integer
+            column: id_chief
+        note:
+            type: integer
+        countNote:
+            type: integer
+            column: count_note
+        content:
+            type: string
+            length: '500'
+        price:
+            type: integer
+        type:
+            type: string
+            length: '255'
+lifecycleCallbacks: {  }

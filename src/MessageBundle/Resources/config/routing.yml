@@ -1,0 +1,9 @@
+message_homepage:
+    path:     /messages
+    defaults: { _controller: MessageBundle:Messages:get }
+message_send:
+    path:     /message/send
+    defaults: { _controller: MessageBundle:Messages:send }
+message_delete:
+    path:     /message/delete
+    defaults: { _controller: MessageBundle:Messages:delete }

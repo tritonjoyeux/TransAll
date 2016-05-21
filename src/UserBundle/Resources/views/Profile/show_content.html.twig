@@ -1,0 +1,17 @@
+{% trans_default_domain 'FOSUserBundle' %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="{{ asset("script/messages.js") }}"></script>
+
+<div class="fos_user_user_show">
+    <img src="/images/profile/{{ user.imageName }}">
+    <p>{{ 'profile.show.username'|trans }}: {{ user.username }}</p>
+    <p>{{ 'profile.show.email'|trans }}: {{ user.email }}</p>
+</div>
+<div id="messagerie">
+    <form method="post" id="form_new">
+        <input type="text" name="destinataire" placeholder="destinataire"><br>
+        <input type="text" name="body" placeholder="body"><br>
+        <input type="submit" value="send" name="send">
+    </form>
+</div>
+
