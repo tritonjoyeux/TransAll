@@ -21,20 +21,20 @@ class __TwigTemplate_2bf102d94f2bec654006153feecfd07becb8d04d933e51d378a48ef9741
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_117c6a99abf48675e1bc514ea6db3caf495af28653278a77d2416fa6b2e7f2fa = $this->env->getExtension("native_profiler");
-        $__internal_117c6a99abf48675e1bc514ea6db3caf495af28653278a77d2416fa6b2e7f2fa->enter($__internal_117c6a99abf48675e1bc514ea6db3caf495af28653278a77d2416fa6b2e7f2fa_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@User/Registration/checkEmail.html.twig"));
+        $__internal_6a41c04d7330f9bbb84de8ce7ee82a536bb46606b240ad0503037a88ca90d1bc = $this->env->getExtension("native_profiler");
+        $__internal_6a41c04d7330f9bbb84de8ce7ee82a536bb46606b240ad0503037a88ca90d1bc->enter($__internal_6a41c04d7330f9bbb84de8ce7ee82a536bb46606b240ad0503037a88ca90d1bc_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@User/Registration/checkEmail.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_117c6a99abf48675e1bc514ea6db3caf495af28653278a77d2416fa6b2e7f2fa->leave($__internal_117c6a99abf48675e1bc514ea6db3caf495af28653278a77d2416fa6b2e7f2fa_prof);
+        $__internal_6a41c04d7330f9bbb84de8ce7ee82a536bb46606b240ad0503037a88ca90d1bc->leave($__internal_6a41c04d7330f9bbb84de8ce7ee82a536bb46606b240ad0503037a88ca90d1bc_prof);
 
     }
 
     // line 5
     public function block_fos_user_content($context, array $blocks = array())
     {
-        $__internal_d1b23e5d7f885d62cc90629a9cb482f4c771ed94cd1fdd4b267d10180ce35ea2 = $this->env->getExtension("native_profiler");
-        $__internal_d1b23e5d7f885d62cc90629a9cb482f4c771ed94cd1fdd4b267d10180ce35ea2->enter($__internal_d1b23e5d7f885d62cc90629a9cb482f4c771ed94cd1fdd4b267d10180ce35ea2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "fos_user_content"));
+        $__internal_ae6dee90998a7c221cd9dbea7d57ab6edb4eccad158f2ca7489ed04535e1624b = $this->env->getExtension("native_profiler");
+        $__internal_ae6dee90998a7c221cd9dbea7d57ab6edb4eccad158f2ca7489ed04535e1624b->enter($__internal_ae6dee90998a7c221cd9dbea7d57ab6edb4eccad158f2ca7489ed04535e1624b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "fos_user_content"));
 
         // line 6
         echo "    <p>";
@@ -42,7 +42,7 @@ class __TwigTemplate_2bf102d94f2bec654006153feecfd07becb8d04d933e51d378a48ef9741
         echo "</p>
 ";
         
-        $__internal_d1b23e5d7f885d62cc90629a9cb482f4c771ed94cd1fdd4b267d10180ce35ea2->leave($__internal_d1b23e5d7f885d62cc90629a9cb482f4c771ed94cd1fdd4b267d10180ce35ea2_prof);
+        $__internal_ae6dee90998a7c221cd9dbea7d57ab6edb4eccad158f2ca7489ed04535e1624b->leave($__internal_ae6dee90998a7c221cd9dbea7d57ab6edb4eccad158f2ca7489ed04535e1624b_prof);
 
     }
 
