@@ -25,7 +25,8 @@ class ProfileFormType extends AbstractType
         $builder->add('imageFile', 'file', array(
             'data_class' => null,
             'required' => false,
-        ));
+        ))
+        ->add('adresse','text');
     }
 
     public function getParent()

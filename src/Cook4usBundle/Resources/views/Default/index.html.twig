@@ -1,5 +1,5 @@
 {% block head %}
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -15,147 +15,287 @@
     <script src="{{ asset('js/carousel.js') }}"></script>
 </head>
 
-
 {% endblock %}
 
 {% block container %}
-    <body>
-    <section class="top">
+<section class="top">
 
-        <section class="menuTablet">
-            <ul>
-                <li>COMMENT ÇA MARCHE ?</li>
-                <li>NOTRE ÉQUIPE</li>
-                <li><img src="{{ asset('img/logoTablette.png') }}"</li>
-                <li>CONNEXION</li>
-                <li>
-                    <button class="chiefTab">DEVENIR CHEF</button>
-                </li>
-            </ul>
-        </section>
-
-        <button class="chief">DEVENIR CHEF</button>
-        <ul class="menu">
-            <a href="#">
-                <li></li>
-                <li></li>
-                <li></li>
-            </a>
+    <section class="menuTablet">
+        <ul>
+            <li>COMMENT ÇA MARCHE ?</li>
+            <li>NOTRE ÉQUIPE</li>
+            <li><img src="{{ asset('img/logoTablette.png') }}"></li>
+            <li>CONNEXION</li>
+            <li><button class="chiefTab">DEVENIR CHEF</button></li>
         </ul>
-        <div class="logo"><img src="{{ asset('img/logo.png') }}"></div>
-        <p class="topText">Ne vous occupez plus<br> jamais du dîner, laissez<br>
-            nos cookists s'en charger.</p>
-        <p class="topTextTablet">NE VOUS OCCUPEZ PLUS JAMAIS <br> DU DÎNER, LAISSEZ NOS COOKISTS<br>
-            S'EN CHARGER.</p><br>
-
-        <input type="search" class="cookType" placeholder="Type de cuisine">
-        <button class="cookTypeSubmit"><i class="fa fa-search" aria-hidden="true"></i></button>
-        <input type="search" class="topInputTab1" placeholder="Type de cuisine"><input type="search"
-                                                                                       class="topInputTab2"
-                                                                                       placeholder="Nombre de personnes">
-        <input type="search" class="topInputTab3" placeholder="Prix">
-        <input type="submit" class="topSubmitTablet" value="Recherche">
-
     </section>
 
-    <section class="cookist">
-        <ul class="findTab">
-            <li><img src="{{ asset('img/cook4us-tablette_81.png') }}">Bordel de merde</li>
-            <li><img src="{{ asset('img/cook4us-tablette_80.png') }}">putain</li>
-            <li><img src="{{ asset('img/cook4us-tablette_09.png') }}">connard</li>
-            <li><img src="{{ asset('img/cook4us-tablette_82.png') }}">de merde</li>
-        </ul>
+    <button class="chief">DEVENIR CHEF</button>
+    <ul class="menu">
+        <a href="#">
+            <li></li>
+            <li></li>
+            <li></li>
+        </a>
+    </ul>
+    <div class="logo"><img src="{{ asset('img/logo.png') }}"></div>
+    <p class="topText">Ne vous occupez plus<br> jamais du dîner, laissez<br>
+        nos cookists s'en charger.</p>
+    <p class="topTextTablet">NE VOUS OCCUPEZ PLUS JAMAIS <br> DU DÎNER, LAISSEZ NOS COOKISTS<br>
+        S'EN CHARGER.</p><br>
 
-        <div class="gallery js-flickity">
-            <div class="gallery-cell">
-                <p class="find"> TROUVEZ LE COOKIST QUI VOUS CORRESPOND </p>
-                <img src="{{ asset('img/cook4us-tablette_81.png') }}">
-                <p class="choose">CHOISISSEZ VOTRE TYPE DE CUISINE</p>
-            </div>
-            <div class="gallery-cell">
-                <p class="find"> TROUVEZ LE COOKIST QUI VOUS CORRESPOND</p>
-                <img src="{{ asset('img/cook4us-tablette_80.png') }}">
-                <p class="choose">CHERCHEZ LE COOKIST ADAPTÉ</p>
-            </div>
-            <div class="gallery-cell">
-                <p class="find"> TROUVEZ LE COOKIST QUI VOUS CORRESPOND</p>
-                <img src="{{ asset('img/cook4us-tablette_09.png') }}">
-                <p class="choose">IL CUISINE POUR VOUS</p>
-            </div>
-            <div class="gallery-cell">
-                <p class="find"> TROUVEZ LE COOKIST QUI VOUS CORRESPOND</p>
-                <img src="{{ asset('img/cook4us-tablette_82.png') }}">
-                <p class="choose">PAIEMENT VIA LE SITE OU L'APPLI</p>
-            </div>
+    <input type="search" class="cookType" placeholder="Type de cuisine">
+    <button class="cookTypeSubmit"><i class="fa fa-search" aria-hidden="true"></i></button>
+    <input type="search" class="topInputTab1" placeholder="Type de cuisine">
+    <input type="submit" class="topSubmitTablet" value="Recherche">
+
+</section>
+
+<section class="cookist">
+    <p class="pFindTab">TROUVEZ LE COOKIST QUI VOUS CORRESPOND</p>
+    <ul class="findTab">
+        <li class="tab1"><img src="{{ asset('img/cook4us-tablette_81.png') }}"><p class="chooseTab">CHOISISSEZ VOTRE TYPE DE CUISINE</p></li>
+        <li class="tab2"><img src="{{ asset('img/cook4us-tablette_80.png') }}"><p class="chooseTab2">CHERCHEZ LE COOKIST ADAPTÉ</p></li>
+        <li class="tab3"> <img src="{{ asset('img/cook4us-tablette_09.png') }}"><p class="chooseTab3">IL CUISINE POUR VOUS</p></li>
+        <li> <img src="{{ asset('img/cook4us-tablette_82.png') }}"><p class="chooseTab4">PAIEMENT VIA LE SITE OU L'APPLI</p></li>
+    </ul>
+
+    <div class="gallery js-flickity">
+        <div class="gallery-cell">
+            <p class="find"> TROUVEZ LE COOKIST QUI VOUS CORRESPOND </p>
+            <img src="{{ asset('img/cook4us-tablette_81.png') }}">
+            <p class="choose">CHOISISSEZ VOTRE TYPE DE CUISINE</p>
         </div>
-    </section>
+        <div class="gallery-cell">
+            <p class="find"> TROUVEZ LE COOKIST QUI VOUS CORRESPOND</p>
+            <img src="{{ asset('img/cook4us-tablette_80.png') }}">
+            <p class="choose">CHERCHEZ LE COOKIST ADAPTÉ</p>
+        </div>
+        <div class="gallery-cell">
+            <p class="find"> TROUVEZ LE COOKIST QUI VOUS CORRESPOND</p>
+            <img src="{{ asset('img/cook4us-tablette_09.png') }}">
+            <p class="choose">IL CUISINE POUR VOUS</p>
+        </div>
+        <div class="gallery-cell">
+            <p class="find"> TROUVEZ LE COOKIST QUI VOUS CORRESPOND</p>
+            <img src="{{ asset('img/cook4us-tablette_82.png') }}">
+            <p class="choose">PAIEMENT VIA LE SITE OU L'APPLI</p>
+        </div>
+    </div>
+</section>
+
+<section class="famousChief">
+
+    <div class="chiefMobile">
+        <article class="imgPeople">
+            <img  src="{{ asset('img/People1.png') }}">
+            <p class="pStyle">Japan style</p>
+            <p class="pMenu">8 menus disponibles</p>
+        </article>
+
+        <article class="imgPeople2">
+            <img src="{{ asset('img/People2.png') }}">
+            <p class="pStyle">Le plaisir français</p>
+            <p class="pMenu">5 menus disponibles</p>
+        </article>
+
+        <article class="imgPeople3">
+            <img src="{{ asset('img/People3.png') }}">
+            <p class="pStyle">Pas qu'un sandwich</p>
+            <p class="pMenu">6 menus disponibles</p>
+
+        </article>
+
+        <article class="imgPeople4">
+            <img src="{{ asset('img/People4.png') }}">
+            <p class="pStyle">Meat avant tout</p>
+            <p class="pMenu">3 menus disponibles</p>
+
+        </article>
+    </div>
+
+    <div class="chiefTablette">
+        <div class="chiefList">
+            <p class="pharesChief"> Les cookist phares du moment</p>
+            <p class="selection">Découvrez dès à présent une sélection de six des meilleurs cookists</p>
+            <article>
+                <div class="rectangle"><p class="price">à partir de</p><p class="price2"> 25€</p></div>
+                <div class="triangle"></div>
+                <img class="ramen" src="{{ asset('img/RamenTablette.png') }}">
+                <p class="nameChief">Michael</p>
+                <img  class="michael" src="{{ asset('img/People1.png') }}">
+                <div class="textTablette">
+                    <p class="japanStyle"> Japan style </p>
+                    <p class="menuDispo"> 8 menus disponibles</p>
+                    <p class="star"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>  <a href="#"> voir le profil + </a></p>
+                </div>
+            </article>
+
+            <article>
+                <div class="rectangle"><p class="price">à partir de</p><p class="price2"> 20€</p></div>
+                <div class="triangle"></div>
+                <img class="sandwich" src="{{ asset('img/SandwichTablette.png') }}">
+                <p class="nameChief">Antoine</p>
+                <img  class="michael" src="{{ asset('img/People3.png') }}">
+                <div class="textTablette">
+                    <p class="japanStyle"> Japan style </p>
+                    <p class="menuDispo"> 8 menus disponibles</p>
+                    <p class="star"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i> <a href="#"> voir le profil + </a></p>
+                </div>
+            </article>
+
+            <article>
+                <div class="rectangle"><p class="price">à partir de</p><p class="price2"> 30€</p></div>
+                <div class="triangle"></div>
+                <img class="salade" src="{{ asset('img/SaladeTablette.png') }}">
+                <p class="nameChief">Emilie</p>
+                <img  class="michael" src="{{ asset('img/People2.png') }}">
+                <div class="textTablette">
+                    <p class="japanStyle"> Japan style </p>
+                    <p class="menuDispo"> 8 menus disponibles</p>
+                    <p class="star"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i> <a href="#"> voir le profil + </a></p>
+                </div>
+            </article>
+
+            <article>
+                <div class="rectangle"><p class="price">à partir de</p><p class="price2"> 18€</p></div>
+                <div class="triangle"></div>
+                <img class="hamburger" src="{{ asset('img/HamburgerTablette.png') }}">
+                <p class="nameChief">Kate</p>
+                <img  class="michael" src="{{ asset('img/People5.png') }}">
+                <div class="textTablette">
+                    <p class="japanStyle"> Japan style </p>
+                    <p class="menuDispo"> 8 menus disponibles</p>
+                    <p class="star"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i> <a href="#"> voir le profil + </a></p>
+                </div>
+            </article>
+
+            <article>
+                <div class="rectangle"><p class="price">à partir de</p><p class="price2"> 40€</p></div>
+                <div class="triangle"></div>
+                <img class="viande" src="{{ asset('img/ViandeTablette.png') }}">
+                <p class="nameChief">Jordan</p>
+                <img  class="michael" src="{{ asset('img/People4.png') }}">
+                <div class="textTablette">
+                    <p class="japanStyle"> Japan style </p>
+                    <p class="menuDispo"> 8 menus disponibles</p>
+                    <p class="star"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i> <a href="#"> voir le profil + </a></p>
+                </div>
+            </article>
+
+            <article>
+                <div class="rectangle"><p class="price">à partir de</p><p class="price2"> 40€</p></div>
+                <div class="triangle"></div>
+                <img class="oeuf" src="{{ asset('img/OeufTablette.png') }}">
+                <p class="nameChief">Kanye</p>
+                <img  class="michael" src="{{ asset('img/People6.png') }}">
+                <div class="textTablette">
+                    <p class="japanStyle"> Japan style </p>
+                    <p class="menuDispo"> 8 menus disponibles</p>
+                    <p class="star"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i> <a href="#"> voir le profil + </a></p>
+                </div>
+
+            </article>
+        </div>
+    </div>
 
 
-    <section class="imgPeople">
 
-        <img src="{{ asset('img/People1.png') }}">
-        <p class="pStyle">Japan style</p>
-        <p class="pMenu">8 menus disponibles</p>
+</section>
 
-    </section>
+<section class="discover">
+    <p class="pTypeCook"> Venez découvrir tous nos types de cuisine et cocktails</p><br>
+    <p class="pWant"> De quoi avez-vous envie aujourd'hui ?</p>
 
-    <section class="imgPeople2">
-        <img src="{{ asset('img/People2.png') }}">
-        <p class="pStyle">Le plaisir français</p>
-        <p class="pMenu">5 menus disponibles</p>
-    </section>
-
-    <section class="imgPeople3">
-        <img src="{{ asset('img/People3.png') }}">
-        <p class="pStyle">Pas qu'un sandwich</p>
-        <p class="pMenu">6 menus disponibles</p>
-
-    </section>
-
-    <section class="imgPeople4">
-        <img src="{{ asset('img/People4.png') }}">
-        <p class="pStyle">Meat avant tout</p>
-        <p class="pMenu">3 menus disponibles</p>
-
-    </section>
-
-    <section class="discover">
-        <p class="pTypeCook"> Venez découvrir tous nos types de cuisine et cocktails</p><br>
-        <p class="pWant"> De quoi avez-vous envie aujourd'hui ?</p>
+    <div class="carousel">
         <div id="showcase" class="noselect">
-            <img class="cloud9-item" src="{{ asset('img/1.png') }}" alt="Firefox">
-            <img class="cloud9-item" src="{{ asset('img/2.png') }}" alt="Wyzo">
-            <img class="cloud9-item" src="{{ asset('img/3.png') }}" alt="Opera">
-            <img class="cloud9-item" src="{{ asset('img/4.png') }}" alt="Chrome">
-            <img class="cloud9-item" src="{{ asset('img/5.png') }}" alt="Internet Explorer">
-            <img class="cloud9-item" src="{{ asset('img/6.png') }}" alt="Safari">
-            <img class="cloud9-item" src="{{ asset('img/7.png') }}" alt="Safari">
+            <img class="cloud9-item" src="{{ asset('img/1.png') }}" alt="1">
+            <img class="cloud9-item" src="{{ asset('img/2.png') }}" alt="2">
+            <img class="cloud9-item" src="{{ asset('img/3.png') }}" alt="3">
+            <img class="cloud9-item" src="{{ asset('img/4.png') }}" alt="4">
+            <img class="cloud9-item" src="{{ asset('img/5.png') }}" alt="5">
+            <img class="cloud9-item" src="{{ asset('img/6.png') }}" alt="6">
+            <img class="cloud9-item" src="{{ asset('img/7.png') }}" alt="7">
         </div>
-        <p class="pCocktail"> Dégustez un cocktail entre amis</p>
-        <div class="pDiscover"> DÉCOUVRIR</div>
-    </section>
+    </div>
 
-    <section class="grossery">
-        <p class="pGrossery1">ET VOUS SAVEZ QUOI ?</p>
-        <p class="pGrossery2"> NOS COOKIST FONT MÊME LES COURSES</p>
-        <p class="pGrossery3"> Vous n'avez pas le temps de faire les courses pour vos invités ? Pas de panique !<br>
-            En plus de se charger du dîner, nos cookists prennent le temps d'acheter tous les ingrédients
-            nécessaires
-            à la préparation de leurs plats.</p>
-        <p class="pGrossery4"> Allez, vous pouvez souffler ! </p>
-    </section>
+    <div class="carouselTablette">
+        <ul>
+            <li><img src="{{ asset('img/4Tablette.png') }}" alt="1"></li>
+            <li><img src="{{ asset('img/2Tablette.png') }}" alt="2"></li>
+            <li><img src="{{ asset('img/3Tablette.png') }}" alt="3"></li>
+            <li><img src="{{ asset('img/1Tablette.png') }}" alt="4"></li>
+            <li><img src="{{ asset('img/5Tablette.png') }}" alt="5"></li>
+            <li><img src="{{ asset('img/6Tablette.png') }}" alt="6"></li>
+            <li><img src="{{ asset('img/7Tablette.png') }}" alt="7"></li>
+        </ul>
+    </div>
 
-    <section class="certified">
-        <img src="{{ asset('img/IconeCertified.png') }}" alt="certified">
-        <h1> NOS COOKIST SONT CERTIFIÉS !</h1>
-        <p> La plupart de <span>nos cookists sont certifés</span>, ils suivent une formation à leur inscription afin
-            d'être
-            conscient des normes de sécurité et d'hygiène. Une petite icone apparaîtra sur leur profil afin
+    <p class="pCocktail"> Dégustez un cocktail entre amis</p>
+    <div class="pDiscover"> DÉCOUVRIR </div>
+    <button class="discoverTablette"> Découvrir</button>
+</section>
+
+<section class="grossery">
+    <p class="pGrossery1">ET VOUS SAVEZ QUOI ?</p>
+    <p class="pGrossery2"> NOS COOKIST FONT MÊME LES COURSES</p>
+    <div class="borderTablette"></div>
+    <p class="pGrossery3"> Vous n'avez pas le temps de faire les courses pour vos invités ? Pas de panique !<br>
+        En plus de se charger du dîner, nos cookists prennent le temps d'acheter tous les ingrédients nécessaires
+        à la préparation de leurs plats.</p>
+    <p class="pGrossery4"> Allez, vous pouvez souffler ! </p>
+</section>
+
+<section class="certified">
+    <img src="{{ asset('img/IconeCertified.png') }}" alt="certified">
+    <h1> NOS COOKIST SONT CERTIFIÉS !</h1>
+    <p> La plupart de <span>nos cookists sont certifés</span>, ils suivent une formation à leur inscription afin d'être
+        conscient des normes de sécurité et d'hygiène. Une petite icone apparaîtra sur leur profil afin
+        que vous puissiez les différencier des autres cookists n'ayant pas suivi la formation.</p>
+    <p> Faites-leur confiance ! </p>
+
+</section>
+
+<section class="certifiedTablette">
+
+    <div class="appli">
+        <img class="appliImg" src="{{ asset('img/app.png') }}">
+        <div class="appliText">
+            <p class="certifiedTitle"> VOUS N'ÊTES PAS TOUJOURS CHEZ VOUS </p>
+            <p class="cookistCertified"> Notre <span>application Cook4us</span>, vous suit n'importe où dans la journée !<br>
+                Téléchargez-la et contactez nos cookists où que vous soyiez. <br> Prévoyez un dîner entre amis seulement 3h
+                à l'avance et tout sera prêt.<br> Vous pouvez vous détendre</p>
+            <p class="trust"> Nous n'attendons plus que vous !
+                <img class="googleplay" src="{{ asset('img/GooglePlay.png') }}"><img class="appstore" src="{{ asset('img/AppStore.png') }}"></p>
+        </div>
+    </div>
+
+    <div class="certifiedBloc2">
+        <p class="certifiedTitle"> NOS COOKIST SONT CERTIFIÉS !</p>
+        <p class="cookistCertified"> La plupart de <span>nos cookists sont certifés</span>, ils suivent une formation à leur inscription afin d'être
+            conscient des normes de sécurité et d'hygiène.<br> Une petite icone apparaîtra sur leur profil afin
             que vous puissiez les différencier des autres cookists n'ayant pas suivi la formation.</p>
-        <p> Faites-leur confiance ! </p>
+        <p class="trust"> Faites-leur confiance ! </p>
+        <p class="join">Rejoignez notre communauté de cookist dès maintenant</p>
+        <p class="site">Postulez sur <span class="siteName">www.cook4us/cookist.fr</span></p>
+        <img src="{{ asset('img/Certification.png') }}">
+    </div>
 
-    </section>
-    </body>
+</section>
+
+<section class="contactChief">
+    <img class="contactImg" src="{{ asset('') }}">
+    <div class="contactText">
+        <p class="contactTitle"> RECHERCHEZ LE COOKIST IDÉAL </p>
+        <p class="contactCertified"> Trouvez le cookist idéal et épatez vos amis !<br>
+            Choisissez votre type de cuisine, le nombre de personne,<br>
+            votre fourchette de prix et la date de votre choix.</p>
+    </div>
+
+    <div class="select">
+
+    </div>
+</section>
+
 
 {% endblock %}
-</html>

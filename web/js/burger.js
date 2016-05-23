@@ -8,7 +8,7 @@ $(function () {
             $('.croix2').css('transform', 'rotate(135deg)');
             $('.croix2').css('top', '16px');
             $('.croix3').css('display', 'none');
-            $('nav').css('display', 'inline-block');
+            $('.nav1').css('display', 'inline-block');
             $('.sombre').css('display', 'inline-block');
             hide = false;
         } else {
@@ -17,7 +17,7 @@ $(function () {
             $('.croix2').css('transform', 'rotate(0deg)');
             $('.croix2').css('top', '10px');
             $('.croix3').css('display', 'inline-block');
-            $('nav').css('display', 'none');
+            $('.nav1').css('display', 'none');
             $('.sombre').css('display', 'none');
             hide = true;
         }
@@ -29,7 +29,7 @@ $(function () {
         $('.croix2').css('transform', 'rotate(0deg)');
         $('.croix2').css('top', '10px');
         $('.croix3').css('display', 'inline-block');
-        $('nav').css('display', 'none');
+        $('.nav1').css('display', 'none');
         $('.sombre').css('display', 'none');
         hide = true;
     });

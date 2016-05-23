@@ -1,17 +1,90 @@
-{% trans_default_domain 'FOSUserBundle' %}
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-<script src="{{ asset("script/messages.js") }}"></script>
+{% block head %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Profile{% endblock %}</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ asset('css/profile.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="{{ asset('js/burger.js') }}"></script>
+    <script src="{{ asset('js/working.js') }}"></script>
+    <script src="{{ asset("script/messages.js") }}"></script>
+</head>
 
-<div class="fos_user_user_show">
-    <img src="/images/profile/{{ user.imageName }}">
-    <p>{{ 'profile.show.username'|trans }}: {{ user.username }}</p>
-    <p>{{ 'profile.show.email'|trans }}: {{ user.email }}</p>
+{% endblock %}
+
+<body>
+<header>
+    <a href="/"><img src="{{ asset("img/logo.png") }}" class="logo" alt="logo"></a>
+
+    <div class="burger">
+        <hr class="croix1">
+        <hr class="croix2">
+        <hr class="croix3">
+    </div>
+    <nav class="nav1">
+        <ul>
+            <li>
+                <button class='download'>TELECHERGER L'APPLI</button>
+            </li>
+            <li>
+                <button class='become'>DEVENIR CHEF</button>
+            </li>
+            <li><a href="/login">CONNEXION</a></li>
+            <li><a href="/working">COMMENT CA MARCHE ?</a></li>
+            <li><a href="/hygiene">HYGIENE</a></li>
+        </ul>
+    </nav>
+    <nav class="nav2">
+        <ul>
+            <li><a href="/login">CONNEXION</a></li>
+            <li><a href="/working">COMMENT CA MARCHE ?</a></li>
+            <li><a href="/hygiene">HYGIENE</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="container">
+    {% trans_default_domain 'FOSUserBundle' %}
+
+    <div class="fos_user_user_show">
+        <img src="/images/profile/{{ user.imageName }}">
+        <p>{{ user.username }}</p>
+        <p>{{ user.adresse }}</p>
+        <p><a href="/profile/edit">Modifier le profil</a></p>
+    </div>
+    <div id="messagerie">
+        <form method="post" id="form_new">
+            Nouveau message:<br>
+            <input type="text" name="destinataire" placeholder="destinataire"><br>
+            <input type="text" name="body" placeholder="body"><br>
+            <input type="submit=" value="send" name="send">
+        </form>
+    </div>
+    <div class="messagerie2">
+        <img src="{{ asset('img/warning-!.png') }}" alt="warning" class="warning"><br>
+        <div class="title">Messagerie</div>
+        <div class="message_messagerie2">La messagerie n'est pas disponible sur la version mobile du site. Vous pouvez y
+            avoir accès en téléchargeant notre application disponible sur Apple Store, Play Store et Windows Store ou
+            sur la version pc.
+        </div>
+    </div>
+    
+    <div class='sombre'></div>
+    <footer>
+            <div class='img_footer'></div>
+            <span class="link">DEVENIR CHEF - HYGIENE - CONTACT - MENTIONS LEGALES</span>
+            <hr class="separa">
+            <span class="reseaux">
+                <img src="{{ asset('img/Facebook.png') }}">
+                <img src="{{ asset('img/Twitter.png') }}">
+                <img src="{{ asset('img/Google.png') }}">
+                <img src="{{ asset('img/Instagram.png') }}">
+            </span>
+            <span class="text_footer">Copyright © Cook 4 us 2016. Tous droits réservés.</span>
+        </footer>
 </div>
-<div id="messagerie">
-    <form method="post" id="form_new">
-        <input type="text" name="destinataire" placeholder="destinataire"><br>
-        <input type="text" name="body" placeholder="body"><br>
-        <input type="submit" value="send" name="send">
-    </form>
-</div>
+    
+</body>
 

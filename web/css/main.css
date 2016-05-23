@@ -44,9 +44,6 @@ table {
 @font-face {
   font-family: 'Coves-Bold';
   src: url("../font/Coves/CovesBold.otf"); }
-@font-face {
-  font-family: 'Lato-Medium';
-  src: url("../font/Lato/LatoMedium.ttf"); }
 body {
   width: 100%; }
 
@@ -241,7 +238,7 @@ body {
   padding-top: 10px; }
 
 #showcase {
-  height: 270px;
+  height: 250px;
   width: 310px;
   background: #1D1918;
   margin: auto;
@@ -252,11 +249,12 @@ body {
   width: 130px; }
 
 .pCocktail {
-  font-size: 0.8rem; }
+  font-size: 0.8rem;
+  padding-bottom: 10px; }
 
 .pDiscover {
   height: 50px;
-  margin-top: 13px;
+  margin-top: 30px;
   background-color: #E33C44;
   line-height: 50px;
   border-bottom: solid 5px #561815; }
@@ -316,7 +314,28 @@ body {
 .topInputTab1, .topInputTab2, .topInputTab3, .topSubmitTablet {
   display: none; }
 
+.pFindTab {
+  display: none; }
+
 .findTab {
+  display: none; }
+
+.chooseTab {
+  display: none; }
+
+.chiefTablette {
+  display: none; }
+
+.carouselTablette {
+  display: none; }
+
+.discoverTablette {
+  display: none; }
+
+.certifiedTablette {
+  display: none; }
+
+.contactChief {
   display: none; }
 
 /*************************** V E R S I O N  T A B L E T T E ***********************/
@@ -369,14 +388,15 @@ body {
     text-align: center;
     margin-top: 100px; }
 
-  .topInputTab1, .topInputTab2, .topInputTab3, .topSubmitTablet {
-    display: inline-block; }
+  .topInputTab1, .topSubmitTablet {
+    display: inline-block;
+    text-align: center; }
 
   .topInputTab1 {
     font-family: Lato-Regular;
     letter-spacing: 1px;
     height: 45px;
-    width: 25%;
+    width: 45%;
     border: none;
     border-right: solid 1px grey;
     border-radius: 15px 0 0 15px;
@@ -386,34 +406,10 @@ body {
     margin-top: 60px;
     font-size: 0.5rem; }
 
-  .topInputTab2 {
-    font-family: Lato-Regular;
-    letter-spacing: 1px;
-    height: 45px;
-    width: 25%;
-    border: none;
-    background-color: #fff;
-    outline: none;
-    margin-top: 60px;
-    font-size: 0.5rem; }
-
-  .topInputTab3 {
-    font-family: Lato-Regular;
-    letter-spacing: 1px;
-    height: 45px;
-    width: 10%;
-    border: none;
-    border-left: solid 1px grey;
-    background-color: #fff;
-    outline: none;
-    margin-top: 60px;
-    margin-left: -0.4%;
-    font-size: 0.5rem; }
-
   .topSubmitTablet {
     position: absolute;
     height: 45px;
-    width: 20%;
+    width: 15%;
     border: none;
     background-color: #D74648;
     color: white;
@@ -426,10 +422,390 @@ body {
   .cookist .gallery {
     display: none; }
 
+  .gallery {
+    background-color: #1A1A1A; }
+
+  .pFindTab {
+    display: inline-block;
+    padding-top: 50px; }
+
   .findTab {
-    display: block; }
+    display: block;
+    height: 300px; }
+
+  .findTab ul {
+    margin-top: 10px; }
 
   .findTab li {
-    display: inline; } }
+    display: inline;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 40px;
+    padding-bottom: 5px;
+    height: 100px; }
+
+  .findTab .tab1, .tab2, .tab3 {
+    border-right: solid 1px #ffffff; }
+
+  .findTab img {
+    margin-top: 40px;
+    height: 50px;
+    width: 45px; }
+
+  .chooseTab {
+    display: inline;
+    font-size: 0.5rem;
+    position: absolute;
+    margin-top: 115px;
+    margin-left: -85px; }
+
+  .chooseTab2 {
+    display: inline;
+    font-size: 0.5rem;
+    position: absolute;
+    margin-top: 115px;
+    margin-left: -85px; }
+
+  .chooseTab3 {
+    display: inline;
+    font-size: 0.5rem;
+    position: absolute;
+    margin-top: 115px;
+    margin-left: -65px; }
+
+  .chooseTab4 {
+    display: inline;
+    font-size: 0.5rem;
+    position: absolute;
+    margin-top: 115px;
+    margin-left: -85px; }
+
+  .chiefMobile {
+    display: none; }
+
+  .famousChief {
+    height: 800px;
+    background-color: #ffffff; }
+
+  .chiefTablette {
+    height: 800px;
+    width: 85%;
+    display: inline-block; }
+
+  .famousChief, .chiefTablette {
+    text-align: center; }
+
+  .pharesChief {
+    padding: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: dimgray; }
+
+  .selection {
+    font-size: 0.6rem;
+    color: grey; }
+
+  .rectangle, .triangle {
+    position: absolute; }
+
+  .rectangle {
+    height: 30px;
+    width: 40px;
+    color: #fff;
+    margin-left: 20px;
+    background-color: #E33C44; }
+
+  .triangle {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 10px solid #E33C44;
+    margin-top: 30px;
+    margin-left: 20px; }
+
+  .price {
+    padding: 3px;
+    font-size: 0.4rem; }
+
+  .price2 {
+    padding-top: 2px;
+    font-size: 0.9rem; }
+
+  .chiefList {
+    margin-top: 20px; }
+
+  .chiefTablette article {
+    display: inline-block;
+    height: 180px;
+    border: solid 1px gainsboro;
+    border-bottom: solid 1px grey;
+    margin-top: 30px;
+    margin-left: 10px; }
+
+  .chiefTablette .ramen, .sandwich, .salade, .hamburger, .viande, .oeuf {
+    height: 120px;
+    width: 250px;
+    display: inline-block; }
+
+  .nameChief {
+    position: absolute;
+    font-size: 0.8rem;
+    margin-top: -25px;
+    margin-left: 140px;
+    color: #ffffff; }
+
+  .michael {
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    margin-top: -35px;
+    margin-left: 65px; }
+
+  .japanStyle {
+    font-size: 0.8rem;
+    padding: 4px;
+    padding-left: 8px;
+    text-align: left; }
+
+  .menuDispo {
+    font-size: 0.5rem;
+    padding: 2px;
+    padding-left: 8px;
+    text-align: left; }
+
+  .star {
+    color: orange;
+    padding-left: 5px;
+    padding-top: 5px;
+    font-size: 0.8rem;
+    text-align: left; }
+
+  .star i {
+    padding-left: 3px; }
+
+  a {
+    display: inline;
+    text-decoration: none;
+    font-size: 0.5rem;
+    margin-left: 115px;
+    font-weight: bold; }
+
+  .discover {
+    height: 420px; }
+
+  .discover p {
+    text-align: center; }
+
+  .carousel {
+    display: none; }
+
+  .carouselTablette {
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center; }
+
+  .carouselTablette li {
+    display: inline-block; }
+
+  .carouselTablette img {
+    height: 100px;
+    width: 100px;
+    margin-left: -20px;
+    cursor: pointer; }
+
+  .carouselTablette img:hover {
+    -webkit-transform: scale(1.5);
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+    -moz-transition: all 0.6s ease-in-out;
+    -webkit-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out; }
+
+  .pDiscover {
+    display: none; }
+
+  .discoverTablette {
+    display: inline-block;
+    height: 30px;
+    width: 150px;
+    background-color: #E33C44;
+    color: #fff;
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 0.8rem; }
+
+  .discover button {
+    margin: 20px;
+    text-align: center; }
+
+  .grossery {
+    background: url("../img/course.png");
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: left; }
+
+  .borderTablette {
+    display: inline-block;
+    height: 2px;
+    width: 80px;
+    background-color: #fff;
+    margin-left: 10%;
+    margin-bottom: 40px; }
+
+  .pGrossery1, .pGrossery2, .pGrossery3, .pGrossery4 {
+    margin-left: 10%; }
+
+  .pGrossery1 {
+    padding-top: 50px; }
+
+  .pGrossery3 {
+    width: 310px;
+    line-height: 30px;
+    padding-left: 0; }
+
+  .certified {
+    display: none; }
+
+  .certifiedTablette {
+    display: block;
+    height: 650px;
+    background-color: #E8EBF0;
+    text-align: center; }
+
+  .appli {
+    height: 200px;
+    width: 600px;
+    background-color: #fff;
+    display: inline-block;
+    margin-top: 90px;
+    text-align: left; }
+
+  .appliImg {
+    height: 230px;
+    width: 170px;
+    margin-top: -30px;
+    margin-left: 70px;
+    position: absolute; }
+
+  .appliText {
+    margin-left: 230px;
+    margin-top: 10px;
+    display: inline-block; }
+
+  .appliText .trust {
+    padding-top: 30px;
+    color: red; }
+
+  .googleplay, .appstore {
+    height: 20px;
+    width: 50px;
+    margin-left: 10px; }
+
+  .appliText .cookistCertified span {
+    color: red; }
+
+  .certifiedBloc2 {
+    height: 200px;
+    width: 600px;
+    background-color: #fff;
+    display: inline-block;
+    margin-top: 50px; }
+
+  .certifiedTitle {
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 0.8rem;
+    margin-left: 60px; }
+
+  .cookistCertified {
+    font-size: 0.6rem;
+    text-align: left;
+    width: 320px;
+    line-height: 15px;
+    margin-left: 60px; }
+
+  .trust {
+    font-size: 0.7rem;
+    text-align: left;
+    padding-top: 10px;
+    margin-left: 60px; }
+
+  .join {
+    text-align: left;
+    font-size: 0.5rem;
+    margin-top: 20px;
+    margin-left: 60px;
+    padding-bottom: 5px;
+    color: gainsboro; }
+
+  .site {
+    text-align: left;
+    font-size: 0.5rem;
+    margin-left: 60px;
+    color: gainsboro; }
+
+  .siteName {
+    color: red; }
+
+  .certifiedBloc2 img {
+    position: absolute;
+    display: inline;
+    height: 170px;
+    width: 170px;
+    margin-top: -160px;
+    margin-left: 105px; }
+
+  .contactChief {
+    display: none;
+    height: 400px; }
+
+  .contactText {
+    margin-left: 250px;
+    font-size: 1rem; }
+
+  .contactCertified {
+    line-height: 20px;
+    font-size: 0.8rem; }
+
+  .contactText p {
+    text-align: center; }
+
+  .contactTitle {
+    padding: 40px;
+    color: red; }
+
+  .select {
+    margin-left: 250px;
+    margin-top: 10px;
+    display: inline-block; } }
+@media only screen and (min-width: 930px) {
+  .famousChief {
+    height: 600px; } }
+@media only screen and (min-width: 1125px) {
+  .famousChief {
+    height: 600px; }
+
+  .chiefTablette article {
+    display: inline-block;
+    height: 200px;
+    border: solid 1px gainsboro;
+    border-bottom: solid 1px grey;
+    margin-top: 30px;
+    margin-left: 10px; }
+
+  .chiefTablette .ramen, .sandwich, .salade, .hamburger, .viande, .oeuf {
+    height: 130px;
+    width: 300px;
+    display: inline-block; }
+
+  .chiefList {
+    height: 500px; } }
 
 /*# sourceMappingURL=main.css.map */

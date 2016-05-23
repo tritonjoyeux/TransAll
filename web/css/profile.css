@@ -1,0 +1,345 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+@font-face {
+    font-family: 'Coves-Bold';
+    src: url("../font/Coves/CovesBold.otf");
+}
+
+@font-face {
+    font-family: 'Lato-Medium';
+    src: url("../font/Lato/LatoMedium.ttf");
+}
+
+html, body {
+    height: auto;
+}
+
+/*header*/
+header {
+    height: 50px;
+    background-color: #1a1a1a;
+    text-align: center;
+    z-index: 10;
+    position: relative;
+}
+
+.nav1 a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.nav1 {
+    display: none;
+    position: fixed;
+    left: -1px;
+    padding-right: 40px;
+    top: 50px;
+    text-align: left;
+    line-height: 40px;
+    background-color: #1a1a1a;
+    padding-left: 40px;
+    min-height: 100%;
+    color: white;
+    font-family: 'Coves-Bold';
+    font-size: 14px;
+
+}
+
+.nav2 {
+    display: none;
+}
+
+.logo {
+    width: 100px;
+    margin-top: 15px;
+    margin-left: -30px;
+}
+
+.burger {
+    cursor: pointer;
+    margin-top: 8px;
+    margin-left: 8px;
+    float: left;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 100px;
+    border-color: #1a1a1a;  
+}
+
+.croix1, .croix2, .croix3 {
+    position: absolute;
+    border-color: white;
+    width: 20px;
+}
+
+.croix1 {
+    top: 16px;
+    left: 14px;
+}
+
+.croix2 {
+    top: 10px;
+    left: 14px;
+}
+
+.croix3 {
+    top: 22px;
+    left: 14px;
+}
+
+.download, .become {
+    margin-top: 20px;
+    font-family: 'Coves-Bold';
+    width: 180px;
+    height: 30px;
+    border-radius: 3px;
+    background-color: white;
+    border: 0;
+}
+
+.become {
+    margin-bottom: 20px;
+    background-color: red;
+    color: white;
+}
+
+.sombre {
+    top: 0px;
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 1;
+    opacity: 0.7;
+    background-color: black;
+    display: none;
+}
+
+/*fin header*/
+
+.fos_user_user_show{
+    text-align: center;
+    font-family: 'Coves-Bold';
+    font-size: 20px;
+}
+
+.fos_user_user_show img{
+    margin-top: 50px;
+    width: 150px;
+    border-radius: 75px;
+    margin-bottom: 15px;
+}
+
+.fos_user_user_show p a{
+    color: #e83838;
+    margin-top: 15px;
+    display: inline-block
+}
+#messagerie{
+    display: none;
+}
+
+.messagerie2{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-family: 'Coves-Bold';
+}
+
+.title, .message_messagerie2{
+    width:70%;
+    display: inline-block;
+}
+
+.warning{
+    margin-top: 20px;
+    width:100px;
+}
+
+.title{
+    font-size:25px;
+    margin-top: 10px;
+}
+
+.message_messagerie2{
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.container {
+    margin-top: -50px;
+    margin-bottom: -150px;
+    padding-bottom: 150px;
+    padding-top: 50px;
+    text-align: center;
+    display: inline-block;
+    z-index: -1;
+    width: 100%;
+    position: absolute;
+    min-height: 100%;
+    background-color: #e8ecf0;
+}
+
+footer {
+    font-family: 'Coves-Bold';
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    color: #fefefe;
+    background-color: #1c1919;
+    height: 150px;
+    font-size: 10px;
+    text-align: center;
+}
+
+.text_footer {
+    font-size: 8px;
+}
+
+.link, .separa, .reseaux, .text_footer {
+    display: inline-block;
+    width: 100%;
+}
+
+.link {
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.separa {
+    width: 70%;
+}
+
+.reseaux img {
+    width: 30px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.text_footer {
+    margin-top: 20px;
+}
+
+.img_footer {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    background-image: url('../img/Icones_footer.png');
+    background-repeat: repeat;
+}
+
+@media screen and (min-width: 640px) {
+    .messagerie2{
+        display: none;
+    }
+    
+    #messagerie{
+        display: inline-block;
+    }
+    .burger {
+        display: none;
+    }
+
+    header {
+        text-align: left;
+    }
+
+    .nav2 {
+        display: inline-block;
+        margin-left: 20%;
+        color: white;
+        font-family: 'Coves-Bold';
+        font-size: 10   px;
+        line-height: 50px;
+    }
+    
+    .nav2 ul li  a{
+       color: white;
+        text-decoration: none;
+    }
+    .nav1 {
+        display: none;
+    }
+
+    .nav2 ul li {
+        display: inline-block;
+        margin-right: 8px;
+    }
+
+    header {
+        text-align: center;
+    }
+    
+    #messagerie{
+        font-family: 'Coves-Bold';
+        width: 70%;
+        text-align: left;
+        margin-bottom: 30px;
+    }
+    
+    /*#messagerie ul li{
+        display: none;
+    }*/
+    #messagerie ul li ul img{
+        width: 40px;
+        border-radius: 20px;
+    }
+    
+    #messagerie ul img{
+        width: 60px;
+        border-radius: 30px;
+    }
+}

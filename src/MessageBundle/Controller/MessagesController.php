@@ -166,15 +166,18 @@ class MessagesController extends Controller
         $tabAll = [];
         $incre = 0;
         $userConv = '';
+        $imageUser = [];
 
 
         foreach ($AllMessages as $user) {
             $stringTemp = explode('|||', reset($user));
             $tabAll[$incre] = '<ul class="conv_' . $stringTemp[3] . '">';
             if ($stringTemp[0] == $this->getUser()->getUsername()) {
+                $tabAll[$incre] .= '<img src="/images/profile/'.$this->getDoctrine()->getRepository('UserBundle:User')->findBy(array('username' => $stringTemp[4]))[0]->getimageName().'">';
                 $tabAll[$incre] .= $stringTemp[4];
                 $allUserConv[$incre] = $stringTemp[4];
             } else {
+                $tabAll[$incre] .= '<img src="/images/profile/'.$this->getDoctrine()->getRepository('UserBundle:User')->findBy(array('username' => $stringTemp[0]))[0]->getimageName().'">';
                 $tabAll[$incre] .= $stringTemp[0];
                 $allUserConv[$incre] = $stringTemp[0];
             }
@@ -184,7 +187,7 @@ class MessagesController extends Controller
                 for ($z = 0; $z < count($message_explode); $z++) {
                     if ($z == 0) {
                         $user = $this->getDoctrine()->getRepository('UserBundle:User')->findBy(array('id' => $message_explode[$z]));
-                        $tabAll[$incre] .= '<ul><li>' . $message_explode[$z] . '</li>';
+                        $tabAll[$incre] .= '<ul><img src="/images/profile/'.$this->getDoctrine()->getRepository('UserBundle:User')->findBy(array('username' => $message_explode[$z]))[0]->getimageName().'"> <li>' . $message_explode[$z] . '</li>';
                     } else if ($z == 1) {
                         $tabAll[$incre] .= '<li>' . $message_explode[$z] . '</li>';
                     } else if ($z == 2) {
@@ -200,7 +203,7 @@ class MessagesController extends Controller
             }
 
             $tabAll[$incre] .= '</ul>' .
-                '<form class="send"><input type="hidden" name="destinataire" value="'.$allUserConv[$incre].'"><br>' .
+                '<form class="send"><input type="hidden" name="destinataire" value="' . $allUserConv[$incre] . '"><br>' .
                 '<input type="text" name="body" placeholder="body"><br>' .
                 '<input type="submit" value="send" name="send">' .
                 '</form >';

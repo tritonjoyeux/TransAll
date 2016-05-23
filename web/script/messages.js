@@ -51,7 +51,7 @@ $(function () {
                                 return false;
                             });
                         } else {
-                            $('.form_new').before('<ul class="' + name_class + '">' + data.getter + '<li id="' + data.id + '">' +
+                            $('#messagerie').prepend('<ul class="' + name_class + '">' + data.getter + '<li id="' + data.id + '">' +
                                 '<ul>' +
                                 '<li>' + data.writter + '</li>' +
                                 '<li>' + data.body + '</li>' +

@@ -52,6 +52,12 @@ class User extends BaseUser
     private $chief;
 
     /**
+     * @var string
+     */
+
+    private $adresse;
+
+    /**
      * If manually uploading a file (i.e. not using Symfony Form) ensure an instance
      * of 'UploadedFile' is injected into this setter to trigger the  update. If this
      * bundle's configuration parameter 'inject_on_load' is set to 'true' this setter
@@ -123,6 +129,29 @@ class User extends BaseUser
     public function getChief()
     {
         return $this->chief;
+    }
+
+    /**
+     * Set adresse
+     *
+     * @param integer $adresse
+     * @return User
+     */
+    public function setAdresse($adresse)
+    {
+        $this->adresse = $adresse;
+
+        return $this;
+    }
+
+    /**
+     * Get adresse
+     *
+     * @return string
+     */
+    public function getAdresse()
+    {
+        return $this->adresse;
     }
 
     public function __construct()
