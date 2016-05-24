@@ -8,9 +8,17 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{ asset('css/profile.css') }}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script src="{{ asset('js/burger.js') }}"></script>
-    <script src="{{ asset('js/working.js') }}"></script>
-    <script src="{{ asset("script/messages.js") }}"></script>
+
+    <script src="{{ asset("script/messages.js") }}"></script>   
 </head>
 
 {% endblock %}
@@ -32,14 +40,12 @@
             <li>
                 <button class='become'>DEVENIR CHEF</button>
             </li>
-            <li><a href="/login">CONNEXION</a></li>
             <li><a href="/working">COMMENT CA MARCHE ?</a></li>
             <li><a href="/hygiene">HYGIENE</a></li>
         </ul>
     </nav>
     <nav class="nav2">
         <ul>
-            <li><a href="/login">CONNEXION</a></li>
             <li><a href="/working">COMMENT CA MARCHE ?</a></li>
             <li><a href="/hygiene">HYGIENE</a></li>
         </ul>
@@ -54,11 +60,11 @@
         <p>{{ user.adresse }}</p>
         <p><a href="/profile/edit">Modifier le profil</a></p>
     </div>
-    <div id="messagerie">
+    <div id="messagerie"><div class="messages"></div>
         <form method="post" id="form_new">
             Nouveau message:<br>
             <input type="text" name="destinataire" placeholder="destinataire"><br>
-            <input type="text" name="body" placeholder="body"><br>
+            <input type="text" name="body" placeholder="Contenu"><br>
             <input type="submit=" value="send" name="send">
         </form>
     </div>

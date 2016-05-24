@@ -67,7 +67,8 @@ class MessagesController extends Controller
             "body" => $new->getBody(),
             "id" => $new->getId(),
             "writter" => $new->getwritter(),
-            "getter" => $new->getgetter()
+            "getter" => $new->getgetter(),
+            "img" => $this->getUser()->getimageName()
         ));
 
         return new Response($json);
@@ -134,7 +135,7 @@ class MessagesController extends Controller
                             . '|||' .
                             $messages2[$p]->getgetter()
                             . '|||' .
-                            $messages[$p]->getId();
+                            $messages2[$p]->getId();
                     $check++;
                 }
             } else {
@@ -149,7 +150,7 @@ class MessagesController extends Controller
                             . '|||' .
                             $messages[$q]->getBody()
                             . '|||' .
-                            $messages[$q]->getDate()->format('Y/m/d h:m:s')
+                            $messages[$q]->getDate()->format('d/m/Y h:m:s')
                             . '|||' .
                             $messages[$q]->getIdUser1() . '_' . $messages[$q]->getIdUser2()
                             . '|||' .
@@ -174,26 +175,26 @@ class MessagesController extends Controller
             $tabAll[$incre] = '<ul class="conv_' . $stringTemp[3] . '">';
             if ($stringTemp[0] == $this->getUser()->getUsername()) {
                 $tabAll[$incre] .= '<img src="/images/profile/'.$this->getDoctrine()->getRepository('UserBundle:User')->findBy(array('username' => $stringTemp[4]))[0]->getimageName().'">';
-                $tabAll[$incre] .= $stringTemp[4];
+                $tabAll[$incre] .= '<span class="name_messsagerie">'.$stringTemp[4].'</span>';
                 $allUserConv[$incre] = $stringTemp[4];
             } else {
                 $tabAll[$incre] .= '<img src="/images/profile/'.$this->getDoctrine()->getRepository('UserBundle:User')->findBy(array('username' => $stringTemp[0]))[0]->getimageName().'">';
-                $tabAll[$incre] .= $stringTemp[0];
+                $tabAll[$incre] .= '<span class="name_messsagerie">'.$stringTemp[0].'</span>';
                 $allUserConv[$incre] = $stringTemp[0];
             }
             foreach ($user as $message) {
                 $message_explode = explode('|||', $message);
-                $tabAll[$incre] .= '<li id="' . $message_explode[5] . '">';
+                $tabAll[$incre] .= '<li class="' . $message_explode[5] . '">';
                 for ($z = 0; $z < count($message_explode); $z++) {
                     if ($z == 0) {
                         $user = $this->getDoctrine()->getRepository('UserBundle:User')->findBy(array('id' => $message_explode[$z]));
-                        $tabAll[$incre] .= '<ul><img src="/images/profile/'.$this->getDoctrine()->getRepository('UserBundle:User')->findBy(array('username' => $message_explode[$z]))[0]->getimageName().'"> <li>' . $message_explode[$z] . '</li>';
+                        $tabAll[$incre] .= '<ul><img src="/images/profile/'.$this->getDoctrine()->getRepository('UserBundle:User')->findBy(array('username' => $message_explode[$z]))[0]->getimageName().'"> <li>' . $message_explode[$z] . ' :</li>';
                     } else if ($z == 1) {
                         $tabAll[$incre] .= '<li>' . $message_explode[$z] . '</li>';
                     } else if ($z == 2) {
                         $tabAll[$incre] .= '<li>' . $message_explode[$z];
                         if ($message_explode[0] == $this->getUser()->getUsername())
-                            $tabAll[$incre] .= '<form method="post" class="delete"><input type="hidden" value="' . $message_explode[5] . '" name="id"><input type="submit" value="X" name="delete"></form>';
+                            $tabAll[$incre] .= '<form method="post" class="delete"><input type="hidden" value="' . $message_explode[5] . '" name="id"><input type="submit" value="X" name="delete" class="button_delete"></form>';
                         $tabAll[$incre] .= '</li></ul>';
                     } else {
                         //nothing
@@ -202,10 +203,10 @@ class MessagesController extends Controller
                 $tabAll[$incre] .= '</li>';
             }
 
-            $tabAll[$incre] .= '</ul>' .
+            $tabAll[$incre] .= '</ul><br>' .
                 '<form class="send"><input type="hidden" name="destinataire" value="' . $allUserConv[$incre] . '"><br>' .
-                '<input type="text" name="body" placeholder="body"><br>' .
-                '<input type="submit" value="send" name="send">' .
+                '<input type="text" name="body" placeholder="Contenu">' .
+                '<input type="submit" value="send" name="send" class="send_submit"><span class="send_icone glyphicon glyphicon-send"></span>' .
                 '</form >';
             $incre++;
         }

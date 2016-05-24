@@ -1,6 +1,6 @@
 <?php
 
-/* FOSUserBundle:Registration:register.html.twig */
+/* UserBundle:Registration:register.html.twig */
 class __TwigTemplate_a9bcd0e537356989978544d25542d5a2f5abba6c8d8523dd504eea28864681eb extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -8,7 +8,7 @@ class __TwigTemplate_a9bcd0e537356989978544d25542d5a2f5abba6c8d8523dd504eea28864
         parent::__construct($env);
 
         // line 1
-        $this->parent = $this->loadTemplate("FOSUserBundle::layout.html.twig", "FOSUserBundle:Registration:register.html.twig", 1);
+        $this->parent = $this->loadTemplate("FOSUserBundle::layout.html.twig", "UserBundle:Registration:register.html.twig", 1);
         $this->blocks = array(
             'fos_user_content' => array($this, 'block_fos_user_content'),
         );
@@ -21,31 +21,31 @@ class __TwigTemplate_a9bcd0e537356989978544d25542d5a2f5abba6c8d8523dd504eea28864
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_7641ab8a4613b8ce06270ae72f8b31c271599ea3808fe134c4bca0afabc64371 = $this->env->getExtension("native_profiler");
-        $__internal_7641ab8a4613b8ce06270ae72f8b31c271599ea3808fe134c4bca0afabc64371->enter($__internal_7641ab8a4613b8ce06270ae72f8b31c271599ea3808fe134c4bca0afabc64371_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "FOSUserBundle:Registration:register.html.twig"));
+        $__internal_25001ee04cff6dd9b8106d9923d2cbfe2cedaac967c7fa8f608f6d4f511df48f = $this->env->getExtension("native_profiler");
+        $__internal_25001ee04cff6dd9b8106d9923d2cbfe2cedaac967c7fa8f608f6d4f511df48f->enter($__internal_25001ee04cff6dd9b8106d9923d2cbfe2cedaac967c7fa8f608f6d4f511df48f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "UserBundle:Registration:register.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_7641ab8a4613b8ce06270ae72f8b31c271599ea3808fe134c4bca0afabc64371->leave($__internal_7641ab8a4613b8ce06270ae72f8b31c271599ea3808fe134c4bca0afabc64371_prof);
+        $__internal_25001ee04cff6dd9b8106d9923d2cbfe2cedaac967c7fa8f608f6d4f511df48f->leave($__internal_25001ee04cff6dd9b8106d9923d2cbfe2cedaac967c7fa8f608f6d4f511df48f_prof);
 
     }
 
     // line 3
     public function block_fos_user_content($context, array $blocks = array())
     {
-        $__internal_cfeb396e4e7843b70d61245d61b6918ece62bfef5e5f56af19ec05106a9b371b = $this->env->getExtension("native_profiler");
-        $__internal_cfeb396e4e7843b70d61245d61b6918ece62bfef5e5f56af19ec05106a9b371b->enter($__internal_cfeb396e4e7843b70d61245d61b6918ece62bfef5e5f56af19ec05106a9b371b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "fos_user_content"));
+        $__internal_3ee4fb181473a3fe181f1fb1af7c20ae3c8bbee626bb238f73f9ae615e8c9d39 = $this->env->getExtension("native_profiler");
+        $__internal_3ee4fb181473a3fe181f1fb1af7c20ae3c8bbee626bb238f73f9ae615e8c9d39->enter($__internal_3ee4fb181473a3fe181f1fb1af7c20ae3c8bbee626bb238f73f9ae615e8c9d39_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "fos_user_content"));
 
         // line 4
-        $this->loadTemplate("FOSUserBundle:Registration:register_content.html.twig", "FOSUserBundle:Registration:register.html.twig", 4)->display($context);
+        $this->loadTemplate("FOSUserBundle:Registration:register_content.html.twig", "UserBundle:Registration:register.html.twig", 4)->display($context);
         
-        $__internal_cfeb396e4e7843b70d61245d61b6918ece62bfef5e5f56af19ec05106a9b371b->leave($__internal_cfeb396e4e7843b70d61245d61b6918ece62bfef5e5f56af19ec05106a9b371b_prof);
+        $__internal_3ee4fb181473a3fe181f1fb1af7c20ae3c8bbee626bb238f73f9ae615e8c9d39->leave($__internal_3ee4fb181473a3fe181f1fb1af7c20ae3c8bbee626bb238f73f9ae615e8c9d39_prof);
 
     }
 
     public function getTemplateName()
     {
-        return "FOSUserBundle:Registration:register.html.twig";
+        return "UserBundle:Registration:register.html.twig";
     }
 
     public function isTraitable()

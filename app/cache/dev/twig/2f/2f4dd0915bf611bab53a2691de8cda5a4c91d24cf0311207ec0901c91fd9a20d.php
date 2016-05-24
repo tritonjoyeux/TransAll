@@ -1,6 +1,6 @@
 <?php
 
-/* FOSUserBundle:Profile:edit_content.html.twig */
+/* UserBundle:Profile:edit_content.html.twig */
 class __TwigTemplate_fe5f8b4afba741c8974ea9bf0453e9443f943cb43b72c7782194d5b32e388d91 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -15,8 +15,8 @@ class __TwigTemplate_fe5f8b4afba741c8974ea9bf0453e9443f943cb43b72c7782194d5b32e3
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_a07617d5986124cdbab1d5487855d174d51c915fb289221facf0d7d8a32da243 = $this->env->getExtension("native_profiler");
-        $__internal_a07617d5986124cdbab1d5487855d174d51c915fb289221facf0d7d8a32da243->enter($__internal_a07617d5986124cdbab1d5487855d174d51c915fb289221facf0d7d8a32da243_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "FOSUserBundle:Profile:edit_content.html.twig"));
+        $__internal_0e5b38f31f2bdd045c6ce09df5361fcf168d04219c9508e88fb446fc127996b0 = $this->env->getExtension("native_profiler");
+        $__internal_0e5b38f31f2bdd045c6ce09df5361fcf168d04219c9508e88fb446fc127996b0->enter($__internal_0e5b38f31f2bdd045c6ce09df5361fcf168d04219c9508e88fb446fc127996b0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "UserBundle:Profile:edit_content.html.twig"));
 
         // line 2
         echo "
@@ -40,13 +40,13 @@ class __TwigTemplate_fe5f8b4afba741c8974ea9bf0453e9443f943cb43b72c7782194d5b32e3
         echo "
 ";
         
-        $__internal_a07617d5986124cdbab1d5487855d174d51c915fb289221facf0d7d8a32da243->leave($__internal_a07617d5986124cdbab1d5487855d174d51c915fb289221facf0d7d8a32da243_prof);
+        $__internal_0e5b38f31f2bdd045c6ce09df5361fcf168d04219c9508e88fb446fc127996b0->leave($__internal_0e5b38f31f2bdd045c6ce09df5361fcf168d04219c9508e88fb446fc127996b0_prof);
 
     }
 
     public function getTemplateName()
     {
-        return "FOSUserBundle:Profile:edit_content.html.twig";
+        return "UserBundle:Profile:edit_content.html.twig";
     }
 
     public function isTraitable()

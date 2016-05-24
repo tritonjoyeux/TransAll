@@ -157,6 +157,7 @@ header {
 
 .sombre {
     top: 0px;
+    left: 0px;
     position: fixed;
     min-width: 100%;
     min-height: 100%;
@@ -330,9 +331,9 @@ footer {
         margin-bottom: 30px;
     }
     
-    /*#messagerie ul li{
+    #messagerie ul li , #messagerie form{
         display: none;
-    }*/
+    }
     #messagerie ul li ul img{
         width: 40px;
         border-radius: 20px;
@@ -341,5 +342,43 @@ footer {
     #messagerie ul img{
         width: 60px;
         border-radius: 30px;
+    }
+    #messagerie {
+        position: relative;
+        margin-top: 30px;
+        background-color: #ffffff;
+        height: 500px;
+    }
+    #messagerie ul {
+        display: inline-block;
+        width: 30%;
+        border-color: #F1F1F1;
+        border-width: 1px;
+        border-style: solid;
+        margin: -1px;
+        cursor: pointer;
+    }
+    .name_messsagerie{
+        display: inline-block;
+        height:60px;
+        vertical-align: top;
+        line-height: 60px;
+        margin-left: 10px;
+    }
+    .messages{
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 500px;
+        display: inline-block;
+        width: 70%;
+        border-color: #F1F1F1;
+        border-width: 1px;
+        border-style: solid;
+        margin: -1px;
+        overflow: auto;
+    }
+    .messages ul{
+        display: block;
     }
 }

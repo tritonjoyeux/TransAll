@@ -1,6 +1,6 @@
 <?php
 
-/* FOSUserBundle:Profile:show_content.html.twig */
+/* UserBundle:Profile:show_content.html.twig */
 class __TwigTemplate_c24750f6a865f7e32fc647758ddbfe84aa27e605577787ade55d726b89196567 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -17,17 +17,17 @@ class __TwigTemplate_c24750f6a865f7e32fc647758ddbfe84aa27e605577787ade55d726b891
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_269934789415b9a7600f4c41adc6994b9a922e666c08ad96b8548256ba2640cd = $this->env->getExtension("native_profiler");
-        $__internal_269934789415b9a7600f4c41adc6994b9a922e666c08ad96b8548256ba2640cd->enter($__internal_269934789415b9a7600f4c41adc6994b9a922e666c08ad96b8548256ba2640cd_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "FOSUserBundle:Profile:show_content.html.twig"));
+        $__internal_4be76409043a4e89c60183796fc857a74b49a17d13589aacf205d4d673768e3b = $this->env->getExtension("native_profiler");
+        $__internal_4be76409043a4e89c60183796fc857a74b49a17d13589aacf205d4d673768e3b->enter($__internal_4be76409043a4e89c60183796fc857a74b49a17d13589aacf205d4d673768e3b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "UserBundle:Profile:show_content.html.twig"));
 
         // line 1
         $this->displayBlock('head', $context, $blocks);
-        // line 17
+        // line 25
         echo "
 <body>
 <header>
     <a href=\"/\"><img src=\"";
-        // line 20
+        // line 28
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/logo.png"), "html", null, true);
         echo "\" class=\"logo\" alt=\"logo\"></a>
 
@@ -44,14 +44,12 @@ class __TwigTemplate_c24750f6a865f7e32fc647758ddbfe84aa27e605577787ade55d726b891
             <li>
                 <button class='become'>DEVENIR CHEF</button>
             </li>
-            <li><a href=\"/login\">CONNEXION</a></li>
             <li><a href=\"/working\">COMMENT CA MARCHE ?</a></li>
             <li><a href=\"/hygiene\">HYGIENE</a></li>
         </ul>
     </nav>
     <nav class=\"nav2\">
         <ul>
-            <li><a href=\"/login\">CONNEXION</a></li>
             <li><a href=\"/working\">COMMENT CA MARCHE ?</a></li>
             <li><a href=\"/hygiene\">HYGIENE</a></li>
         </ul>
@@ -59,34 +57,34 @@ class __TwigTemplate_c24750f6a865f7e32fc647758ddbfe84aa27e605577787ade55d726b891
 </header>
 <div class=\"container\">
     ";
-        // line 50
+        // line 56
         echo "
     <div class=\"fos_user_user_show\">
         <img src=\"/images/profile/";
-        // line 52
+        // line 58
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["user"]) ? $context["user"] : $this->getContext($context, "user")), "imageName", array()), "html", null, true);
         echo "\">
         <p>";
-        // line 53
+        // line 59
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["user"]) ? $context["user"] : $this->getContext($context, "user")), "username", array()), "html", null, true);
         echo "</p>
         <p>";
-        // line 54
+        // line 60
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["user"]) ? $context["user"] : $this->getContext($context, "user")), "adresse", array()), "html", null, true);
         echo "</p>
         <p><a href=\"/profile/edit\">Modifier le profil</a></p>
     </div>
-    <div id=\"messagerie\">
+    <div id=\"messagerie\"><div class=\"messages\"></div>
         <form method=\"post\" id=\"form_new\">
             Nouveau message:<br>
             <input type=\"text\" name=\"destinataire\" placeholder=\"destinataire\"><br>
-            <input type=\"text\" name=\"body\" placeholder=\"body\"><br>
+            <input type=\"text\" name=\"body\" placeholder=\"Contenu\"><br>
             <input type=\"submit=\" value=\"send\" name=\"send\">
         </form>
     </div>
     <div class=\"messagerie2\">
         <img src=\"";
-        // line 66
+        // line 72
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/warning-!.png"), "html", null, true);
         echo "\" alt=\"warning\" class=\"warning\"><br>
         <div class=\"title\">Messagerie</div>
@@ -103,19 +101,19 @@ class __TwigTemplate_c24750f6a865f7e32fc647758ddbfe84aa27e605577787ade55d726b891
             <hr class=\"separa\">
             <span class=\"reseaux\">
                 <img src=\"";
-        // line 80
+        // line 86
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/Facebook.png"), "html", null, true);
         echo "\">
                 <img src=\"";
-        // line 81
+        // line 87
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/Twitter.png"), "html", null, true);
         echo "\">
                 <img src=\"";
-        // line 82
+        // line 88
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/Google.png"), "html", null, true);
         echo "\">
                 <img src=\"";
-        // line 83
+        // line 89
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/Instagram.png"), "html", null, true);
         echo "\">
             </span>
@@ -127,15 +125,15 @@ class __TwigTemplate_c24750f6a865f7e32fc647758ddbfe84aa27e605577787ade55d726b891
 
 ";
         
-        $__internal_269934789415b9a7600f4c41adc6994b9a922e666c08ad96b8548256ba2640cd->leave($__internal_269934789415b9a7600f4c41adc6994b9a922e666c08ad96b8548256ba2640cd_prof);
+        $__internal_4be76409043a4e89c60183796fc857a74b49a17d13589aacf205d4d673768e3b->leave($__internal_4be76409043a4e89c60183796fc857a74b49a17d13589aacf205d4d673768e3b_prof);
 
     }
 
     // line 1
     public function block_head($context, array $blocks = array())
     {
-        $__internal_db8828c5291ce955ba4501c7965a8e42adaf3807155463a01bbdc28a68229206 = $this->env->getExtension("native_profiler");
-        $__internal_db8828c5291ce955ba4501c7965a8e42adaf3807155463a01bbdc28a68229206->enter($__internal_db8828c5291ce955ba4501c7965a8e42adaf3807155463a01bbdc28a68229206_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "head"));
+        $__internal_d73a3588ac308dc53cd975a1e658d92afceb6ec7c63720a9c82a2d770794e9ed = $this->env->getExtension("native_profiler");
+        $__internal_d73a3588ac308dc53cd975a1e658d92afceb6ec7c63720a9c82a2d770794e9ed->enter($__internal_d73a3588ac308dc53cd975a1e658d92afceb6ec7c63720a9c82a2d770794e9ed_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "head"));
 
         // line 2
         echo "<!DOCTYPE html>
@@ -153,41 +151,46 @@ class __TwigTemplate_c24750f6a865f7e32fc647758ddbfe84aa27e605577787ade55d726b891
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("css/profile.css"), "html", null, true);
         echo "\">
     <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js\"></script>
+        <!-- Latest compiled and minified CSS -->
+<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css\" integrity=\"sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7\" crossorigin=\"anonymous\">
+
+<!-- Optional theme -->
+<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css\" integrity=\"sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r\" crossorigin=\"anonymous\">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js\" integrity=\"sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS\" crossorigin=\"anonymous\"></script>
     <script src=\"";
-        // line 11
+        // line 19
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("js/burger.js"), "html", null, true);
         echo "\"></script>
+
     <script src=\"";
-        // line 12
-        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("js/working.js"), "html", null, true);
-        echo "\"></script>
-    <script src=\"";
-        // line 13
+        // line 21
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("script/messages.js"), "html", null, true);
-        echo "\"></script>
+        echo "\"></script>   
 </head>
 
 ";
         
-        $__internal_db8828c5291ce955ba4501c7965a8e42adaf3807155463a01bbdc28a68229206->leave($__internal_db8828c5291ce955ba4501c7965a8e42adaf3807155463a01bbdc28a68229206_prof);
+        $__internal_d73a3588ac308dc53cd975a1e658d92afceb6ec7c63720a9c82a2d770794e9ed->leave($__internal_d73a3588ac308dc53cd975a1e658d92afceb6ec7c63720a9c82a2d770794e9ed_prof);
 
     }
 
     // line 7
     public function block_title($context, array $blocks = array())
     {
-        $__internal_394681990f04ca2ad25d9420206a7506942d8c7a16c6d78d53555035f37617d5 = $this->env->getExtension("native_profiler");
-        $__internal_394681990f04ca2ad25d9420206a7506942d8c7a16c6d78d53555035f37617d5->enter($__internal_394681990f04ca2ad25d9420206a7506942d8c7a16c6d78d53555035f37617d5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_ef34b53a07a49166cb010535113046f3724b3e34fde3f1603bba8f0e6dc20c85 = $this->env->getExtension("native_profiler");
+        $__internal_ef34b53a07a49166cb010535113046f3724b3e34fde3f1603bba8f0e6dc20c85->enter($__internal_ef34b53a07a49166cb010535113046f3724b3e34fde3f1603bba8f0e6dc20c85_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         echo "Profile";
         
-        $__internal_394681990f04ca2ad25d9420206a7506942d8c7a16c6d78d53555035f37617d5->leave($__internal_394681990f04ca2ad25d9420206a7506942d8c7a16c6d78d53555035f37617d5_prof);
+        $__internal_ef34b53a07a49166cb010535113046f3724b3e34fde3f1603bba8f0e6dc20c85->leave($__internal_ef34b53a07a49166cb010535113046f3724b3e34fde3f1603bba8f0e6dc20c85_prof);
 
     }
 
     public function getTemplateName()
     {
-        return "FOSUserBundle:Profile:show_content.html.twig";
+        return "UserBundle:Profile:show_content.html.twig";
     }
 
     public function isTraitable()
@@ -197,7 +200,7 @@ class __TwigTemplate_c24750f6a865f7e32fc647758ddbfe84aa27e605577787ade55d726b891
 
     public function getDebugInfo()
     {
-        return array (  177 => 7,  166 => 13,  162 => 12,  158 => 11,  153 => 9,  148 => 7,  141 => 2,  135 => 1,  119 => 83,  115 => 82,  111 => 81,  107 => 80,  90 => 66,  75 => 54,  71 => 53,  67 => 52,  63 => 50,  31 => 20,  26 => 17,  24 => 1,);
+        return array (  180 => 7,  169 => 21,  164 => 19,  151 => 9,  146 => 7,  139 => 2,  133 => 1,  117 => 89,  113 => 88,  109 => 87,  105 => 86,  88 => 72,  73 => 60,  69 => 59,  65 => 58,  61 => 56,  31 => 28,  26 => 25,  24 => 1,);
     }
 }
 /* {% block head %}*/
@@ -210,9 +213,17 @@ class __TwigTemplate_c24750f6a865f7e32fc647758ddbfe84aa27e605577787ade55d726b891
 /*     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">*/
 /*     <link rel="stylesheet" href="{{ asset('css/profile.css') }}">*/
 /*     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>*/
+/*         <!-- Latest compiled and minified CSS -->*/
+/* <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">*/
+/* */
+/* <!-- Optional theme -->*/
+/* <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">*/
+/* */
+/* <!-- Latest compiled and minified JavaScript -->*/
+/* <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>*/
 /*     <script src="{{ asset('js/burger.js') }}"></script>*/
-/*     <script src="{{ asset('js/working.js') }}"></script>*/
-/*     <script src="{{ asset("script/messages.js") }}"></script>*/
+/* */
+/*     <script src="{{ asset("script/messages.js") }}"></script>   */
 /* </head>*/
 /* */
 /* {% endblock %}*/
@@ -234,14 +245,12 @@ class __TwigTemplate_c24750f6a865f7e32fc647758ddbfe84aa27e605577787ade55d726b891
 /*             <li>*/
 /*                 <button class='become'>DEVENIR CHEF</button>*/
 /*             </li>*/
-/*             <li><a href="/login">CONNEXION</a></li>*/
 /*             <li><a href="/working">COMMENT CA MARCHE ?</a></li>*/
 /*             <li><a href="/hygiene">HYGIENE</a></li>*/
 /*         </ul>*/
 /*     </nav>*/
 /*     <nav class="nav2">*/
 /*         <ul>*/
-/*             <li><a href="/login">CONNEXION</a></li>*/
 /*             <li><a href="/working">COMMENT CA MARCHE ?</a></li>*/
 /*             <li><a href="/hygiene">HYGIENE</a></li>*/
 /*         </ul>*/
@@ -256,11 +265,11 @@ class __TwigTemplate_c24750f6a865f7e32fc647758ddbfe84aa27e605577787ade55d726b891
 /*         <p>{{ user.adresse }}</p>*/
 /*         <p><a href="/profile/edit">Modifier le profil</a></p>*/
 /*     </div>*/
-/*     <div id="messagerie">*/
+/*     <div id="messagerie"><div class="messages"></div>*/
 /*         <form method="post" id="form_new">*/
 /*             Nouveau message:<br>*/
 /*             <input type="text" name="destinataire" placeholder="destinataire"><br>*/
-/*             <input type="text" name="body" placeholder="body"><br>*/
+/*             <input type="text" name="body" placeholder="Contenu"><br>*/
 /*             <input type="submit=" value="send" name="send">*/
 /*         </form>*/
 /*     </div>*/
