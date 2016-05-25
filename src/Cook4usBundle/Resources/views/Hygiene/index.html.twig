@@ -1,0 +1,84 @@
+{% block head %}
+    <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Accueil{% endblock %}</title>
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/flickity.css') }}">
+    <script src="{{ asset('js/flickity.pkgd.min.js') }}"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <script src="{{ asset('js/jquery.js') }}"></script>
+    <script src="{{ asset('js/jquery.reflection.js') }}"></script>
+    <script src="{{ asset('js/jquery.cloud9carousel.js') }}"></script>
+    <script src="{{ asset('js/carousel.js') }}"></script>
+    <script src="{{ asset('js/menuMobile.js') }}"></script>
+    <link rel="stylesheet" href="{{ asset('css/hygiene.css') }}">
+</head>
+
+{% endblock %}
+
+{% block container %}
+
+<header>
+    <aside class="menuAside">
+        <ul class="ulClose">
+            <li class="close"><i class="fa fa-times" aria-hidden="true"></i></li>
+            <li class="menuLogo"><a href="/"><img src="{{ asset('img/logoTablette.png') }}"></a></li>
+        </ul>
+
+        <ul class="menuApp">
+            <li><button class="download">TÉLÉCHARGER L'APPLI</button></li>
+            <li><button class="become">DEVENIR CHEF</button></li>
+            <li class="connexion">CONNEXION</li>
+            <li class="connexion">COMMENT ÇA MARCHE</li>
+            <li class="connexion"><a href="/hygiene">HYGIÈNE</a></li>
+        </ul>
+    </aside>
+
+    <ul class="menu">
+        <a href="#">
+            <li></li>
+            <li></li>
+            <li></li>
+        </a>
+    </ul>
+    <div class="logoHygiene"><img src="{{ asset('img/logoTablette.png') }}"></div>
+</header>
+
+<div class="hygiene">
+    <p class="titreHygiene">HYGIÈNE</p>
+    <p class="titreHygiene2">Votre sécurité est une priorité</p>
+
+    <div class="hygienebloc">
+        <p>Lors de son inscription <span>le cookist s'engage à respecter tous les règlements en vigueur
+            pour assurer l'hygiène garante d'une alimentation saine</span>, conformément à l'Arrêté du 9 mai 1995.
+            Chaque cookist reçoit alors un <span>guide d'Hygiène lors de son inscription sur Cook4us</span>. Nous faisons
+            ensuite personnellement <span>connaissance avec chacun d'entre eux  lors de réunion d'information</span> à laquelle
+            sont conviés tous nos cookists !
+        </p>
+    </div>
+
+    <div class="hygienebloc">
+        <p> De plus, pour prévenir de certaines allergies, <span>le cookists sont tenus de préciser les ingrédients
+                principaux de chacun de leur plat.</span> Ainsi les convives peuvent demander le changement d'un ingrédient.
+        </p>
+    </div>
+
+    <div class="hygienebloc">
+        <p> <span>En cas de gros dommage causé involontairement à un convive</span> (allergie, réaction à la nourriture, etc.),
+            votre assurance de responsabilité civile consiste à se substituer au responsable pour indemniser la
+            victime. <span>Les assureurs incluent systématiquement une garantie de responsabilité civile vie privée</span>
+            dans les contrats multirisques habitation. Ainsi <span>Cookists et Convives sont protégés par la loi.</span>
+        </p>
+    </div>
+
+    <p class="titreHygiene3">Votre santé nous préoccupe </p>
+    <p class="titreHygiene4">L'hygiène est donc au coeur de nos priorité</p>
+
+    <div class="imageHygiene"><img src="{{ asset('img/Illustration2.png') }}"></div>
+
+</div>
+
+{% endblock %}

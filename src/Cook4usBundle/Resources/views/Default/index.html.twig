@@ -13,11 +13,27 @@
     <script src="{{ asset('js/jquery.reflection.js') }}"></script>
     <script src="{{ asset('js/jquery.cloud9carousel.js') }}"></script>
     <script src="{{ asset('js/carousel.js') }}"></script>
+    <script src="{{ asset('js/menuMobile.js') }}"></script>
 </head>
 
 {% endblock %}
 
 {% block container %}
+<aside class="menuAside">
+    <ul class="ulClose">
+        <li class="close"><i class="fa fa-times" aria-hidden="true"></i></li>
+        <li class="menuLogo"><img src="{{ asset('img/logoTablette.png') }}"></li>
+    </ul>
+
+    <ul class="menuApp">
+        <li><button class="download">TÉLÉCHARGER L'APPLI</button></li>
+        <li><button class="become">DEVENIR CHEF</button></li>
+        <li class="connexion">CONNEXION</li>
+        <li class="connexion">COMMENT ÇA MARCHE</li>
+        <li class="connexion"><a href="/hygiene">HYGIÈNE</a></li>
+    </ul>
+</aside>
+
 <section class="top">
 
     <section class="menuTablet">
@@ -284,16 +300,55 @@
 </section>
 
 <section class="contactChief">
-    <img class="contactImg" src="{{ asset('') }}">
-    <div class="contactText">
-        <p class="contactTitle"> RECHERCHEZ LE COOKIST IDÉAL </p>
-        <p class="contactCertified"> Trouvez le cookist idéal et épatez vos amis !<br>
-            Choisissez votre type de cuisine, le nombre de personne,<br>
-            votre fourchette de prix et la date de votre choix.</p>
-    </div>
+    <div class="imgSelect">
 
-    <div class="select">
+        <div class="contactImg"><img src="{{ asset('img/photo1.png') }}"></div>
+        <div class="contactImg2"><img src="{{ asset('img/photo2.png') }}"></div>
 
+        <div class="contactSelect">
+            <div class="contactText">
+                <p class="contactTitle"> RECHERCHEZ LE COOKIST IDÉAL </p>
+                <p class="contactCertified"> Trouvez le cookist idéal et épatez vos amis !<br>
+                    Choisissez votre type de cuisine, le nombre de personne,<br>
+                    votre fourchette de prix et la date de votre choix.</p>
+            </div>
+
+            <div class="select">
+                <table class="choose">
+                    <tr>
+                        <th>Type de cuisine</th>
+                        <th>Nombre de personne</th>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <select>
+                                <option>Sélectionner un type</option>
+                                <option>Japan Style</option>
+                                <option>Pas qu'un sandwich</option>
+                                <option>Le plaisir français</option>
+                                <option>O'Burgers</option>
+                                <option>Meat avant tout</option>
+                                <option>Traditionnel asiatique</option>
+                            </select>
+                        </td>
+                        <td><input type="number" placeholder="Sélectionnez un nombre"></td>
+                    </tr>
+                    <tr>
+                        <th>Date</th>
+                        <th>Fourchette de prix</th>
+                    </tr>
+
+                    <tr>
+                        <td><input type="date" placeholder="Choisissez une date"></td>
+                        <td><input type="number" placeholder="Choisissez une fourchette"></td>
+                    </tr>
+
+                </table>
+                <button class="searchButton"> Rechercher</button>
+            </div>
+
+        </div>
     </div>
 </section>
 

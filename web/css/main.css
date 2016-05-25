@@ -43,9 +43,69 @@ table {
 
 @font-face {
   font-family: 'Coves-Bold';
-  src: url("../font/Coves/CovesBold.otf"); }
+  src: url("../font/CovesTypeface/Coves-Bold.otf"); }
 body {
   width: 100%; }
+
+a {
+  text-decoration: none;
+  color: #fff; }
+
+aside {
+  height: 100%;
+  width: 300px;
+  background-color: #1D1918; }
+
+aside ul {
+  color: white; }
+
+.ulClose {
+  color: white; }
+
+.ulClose li {
+  display: inline-block; }
+
+.close {
+  padding: 10px;
+  font-size: 1.5rem; }
+
+.menuLogo {
+  margin-left: 50px;
+  padding: 10px; }
+
+.menuLogo img {
+  height: 20px;
+  width: 120px; }
+
+.menuApp {
+  margin-left: 30px; }
+
+.menuApp ul {
+  margin-top: 20px; }
+
+.menuApp li {
+  padding: 15px; }
+
+.download {
+  height: 30px;
+  width: 200px;
+  border: none;
+  border-radius: 5px;
+  background-color: ghostwhite;
+  margin-top: 10px;
+  font-size: 0.8rem; }
+
+.become {
+  height: 30px;
+  width: 200px;
+  border: none;
+  border-radius: 5px;
+  background-color: #E33C44;
+  color: #fff;
+  font-size: 0.8rem; }
+
+.connexion {
+  font-size: 0.8rem; }
 
 .top {
   height: 600px;
@@ -707,7 +767,10 @@ body {
     width: 50px;
     margin-left: 10px; }
 
-  .appliText .cookistCertified span {
+  .appliText span {
+    color: red; }
+
+  .cookistCertified span {
     color: red; }
 
   .certifiedBloc2 {
@@ -763,16 +826,29 @@ body {
     margin-left: 105px; }
 
   .contactChief {
-    display: none;
-    height: 400px; }
+    display: block;
+    height: 600px;
+    text-align: center; }
+
+  .imgSelect {
+    display: inline-block;
+    height: 500px;
+    width: 650px;
+    margin-top: 50px; }
+
+  .contactSelect {
+    display: inline-block;
+    margin-top: 30px; }
 
   .contactText {
     margin-left: 250px;
-    font-size: 1rem; }
+    font-size: 1.0rem;
+    padding-left: 50px; }
 
   .contactCertified {
-    line-height: 20px;
-    font-size: 0.8rem; }
+    line-height: 30px;
+    font-size: 0.9rem;
+    padding-bottom: 20px; }
 
   .contactText p {
     text-align: center; }
@@ -782,12 +858,121 @@ body {
     color: red; }
 
   .select {
-    margin-left: 250px;
-    margin-top: 10px;
-    display: inline-block; } }
+    height: 250px;
+    width: 200px;
+    margin-top: 30px;
+    margin-left: 200px;
+    display: inline-block; }
+
+  .select table {
+    height: 100px; }
+
+  .choose th {
+    height: 20px;
+    width: 300px;
+    text-align: left;
+    color: red;
+    padding-right: 20px;
+    font-size: 0.9rem; }
+
+  .choose td {
+    height: 20px;
+    width: 100px;
+    padding-bottom: 30px;
+    padding-right: 20px; }
+
+  .choose input {
+    border: solid 1px gainsboro;
+    height: 20px;
+    width: 130px;
+    border-radius: 2px;
+    color: gainsboro;
+    font-size: 0.5rem; }
+
+  .choose select {
+    border: solid 1px gainsboro;
+    height: 25px;
+    width: 130px;
+    background-color: #fff;
+    color: gainsboro;
+    border-radius: 1px;
+    font-size: 0.5rem; }
+
+  .contactImg img {
+    height: 340px;
+    width: 135px; }
+
+  .contactImg2 img {
+    height: 340px;
+    width: 135px; }
+
+  .contactImg {
+    position: absolute;
+    text-align: left;
+    height: 340px;
+    width: 130px;
+    margin-top: 80px;
+    margin-left: 20px; }
+
+  .contactImg2 {
+    position: absolute;
+    text-align: left;
+    height: 340px;
+    width: 130px;
+    margin-top: 80px;
+    margin-left: 160px;
+    padding-left: 5px; }
+
+  .searchButton {
+    display: inline-block;
+    height: 30px;
+    width: 150px;
+    background-color: #E33C44;
+    color: #fff;
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    margin-left: 70px; } }
+/**************************** V E R S I O N  D E S K T O P **************************/
 @media only screen and (min-width: 930px) {
   .famousChief {
-    height: 600px; } }
+    height: 600px; }
+
+  .contactChief {
+    display: block;
+    height: 600px;
+    text-align: center; }
+
+  .imgSelect {
+    display: inline-block;
+    height: 500px;
+    width: 850px;
+    margin-top: 50px; }
+
+  .contactSelect {
+    margin-left: 80px; }
+
+  .contactImg img {
+    height: 400px;
+    width: 180px; }
+
+  .contactImg2 img {
+    height: 400px;
+    width: 180px; }
+
+  .contactImg {
+    height: 400px;
+    width: 180px;
+    margin-top: 40px;
+    margin-left: 20px; }
+
+  .contactImg2 {
+    height: 400px;
+    width: 180px;
+    margin-top: 40px;
+    margin-left: 220px;
+    padding-left: 5px; } }
 @media only screen and (min-width: 1125px) {
   .famousChief {
     height: 600px; }
@@ -806,6 +991,96 @@ body {
     display: inline-block; }
 
   .chiefList {
-    height: 500px; } }
+    height: 500px; }
+
+  .appli {
+    height: 230px;
+    width: 800px;
+    background-color: #fff;
+    display: inline-block;
+    margin-top: 90px;
+    text-align: left; }
+
+  .appliImg {
+    height: 260px;
+    width: 180px;
+    margin-top: -30px;
+    margin-left: 140px;
+    position: absolute; }
+
+  .appliText {
+    margin-left: 290px;
+    margin-top: 10px;
+    display: inline-block; }
+
+  .appliText .trust {
+    padding-top: 20px;
+    color: red; }
+
+  .googleplay, .appstore {
+    height: 20px;
+    width: 50px;
+    margin-left: 10px; }
+
+  .certifiedBloc2 {
+    height: 230px;
+    width: 800px;
+    background-color: #fff;
+    display: inline-block;
+    margin-top: 50px; }
+
+  .certifiedTitle {
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 1rem;
+    margin-left: 110px; }
+
+  .cookistCertified {
+    font-size: 0.8rem;
+    text-align: left;
+    width: 340px;
+    line-height: 15px;
+    margin-left: 110px; }
+
+  .cookistCertified span {
+    color: red; }
+
+  .trust {
+    font-size: 1rem;
+    text-align: left;
+    padding-top: 10px;
+    margin-left: 110px; }
+
+  .join {
+    text-align: left;
+    font-size: 0.8rem;
+    margin-top: 20px;
+    margin-left: 110px;
+    padding-bottom: 5px;
+    color: gainsboro; }
+
+  .site {
+    text-align: left;
+    font-size: 0.8rem;
+    margin-left: 110px;
+    color: gainsboro; }
+
+  .siteName {
+    color: red; }
+
+  .certifiedBloc2 img {
+    position: absolute;
+    display: inline;
+    height: 180px;
+    width: 180px;
+    margin-top: -180px;
+    margin-left: 105px; }
+
+  .imgSelect {
+    display: inline-block;
+    height: 500px;
+    width: 950px;
+    margin-top: 50px; } }
 
 /*# sourceMappingURL=main.css.map */
