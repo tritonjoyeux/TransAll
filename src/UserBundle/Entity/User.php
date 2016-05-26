@@ -49,7 +49,7 @@ class User extends BaseUser
      * @var integer
      */
 
-    private $chief;
+    private $roleUser;
 
     /**
      * @var string
@@ -109,29 +109,6 @@ class User extends BaseUser
     }
 
     /**
-     * Set chief
-     *
-     * @param integer $chief
-     * @return User
-     */
-    public function setChief($chief)
-    {
-        $this->chief = $chief;
-
-        return $this;
-    }
-
-    /**
-     * Get chief
-     *
-     * @return string
-     */
-    public function getChief()
-    {
-        return $this->chief;
-    }
-
-    /**
      * Set adresse
      *
      * @param integer $adresse
@@ -158,5 +135,28 @@ class User extends BaseUser
     {
         parent::__construct();
         // your own logic
+    }
+
+/**
+ * Set roleUser
+*
+* @param integer $roleUser
+* @return User
+*/
+    public function setRoleUser($roleUser)
+    {
+        $this->chief = $roleUser;
+
+        return $this;
+    }
+
+/**
+ * Get roleUser
+*
+* @return string
+*/
+    public function getRoleUser()
+    {
+        return $this->roleUser;
     }
 }

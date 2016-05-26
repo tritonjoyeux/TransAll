@@ -1,0 +1,57 @@
+{% block head %}
+    <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Mentions Légales{% endblock %}</title>
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/flickity.css') }}">
+    <script src="{{ asset('js/flickity.pkgd.min.js') }}"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <script src="{{ asset('js/jquery.js') }}"></script>
+    <script src="{{ asset('js/jquery.reflection.js') }}"></script>
+    <script src="{{ asset('js/jquery.cloud9carousel.js') }}"></script>
+    <script src="{{ asset('js/carousel.js') }}"></script>
+    <script src="{{ asset('js/menuMobile.js') }}"></script>
+    <link rel="stylesheet" href="{{ asset('css/hygiene.css') }}">
+</head>
+
+{% endblock %}
+
+{% include 'Cook4usBundle:Base:menu.html.twig' %}
+
+{% block container %}
+    <div class="hygiene">
+        <p class="titreHygiene">Mentions Légales</p>
+
+        <div class="hygienebloc">
+            <p> Chaque Cookist est soumis aux avis de ses convives</p>
+            <p>Lorsque les cookists s'inscrivent
+            </p>
+        </div>
+
+        <div class="hygienebloc">
+            <p> De plus, pour prévenir de certaines allergies, <span>le cookists sont tenus de préciser les ingrédients
+                principaux de chacun de leur plat.</span> Ainsi les convives peuvent demander le changement d'un ingrédient.
+            </p>
+        </div>
+
+        <div class="hygienebloc">
+            <p> <span>En cas de gros dommage causé involontairement à un convive</span> (allergie, réaction à la nourriture, etc.),
+                votre assurance de responsabilité civile consiste à se substituer au responsable pour indemniser la
+                victime. <span>Les assureurs incluent systématiquement une garantie de responsabilité civile vie privée</span>
+                dans les contrats multirisques habitation. Ainsi <span>Cookists et Convives sont protégés par la loi.</span>
+            </p>
+        </div>
+
+        <p class="titreHygiene3">Votre santé nous préoccupe </p>
+        <p class="titreHygiene4">L'hygiène est donc au coeur de nos priorité</p>
+
+        <div class="imageHygiene"><img src="{{ asset('img/Illustration2.png') }}"></div>
+
+    </div>
+
+{% endblock %}
+
+{% include 'Cook4usBundle:Base:footer.html.twig' %}

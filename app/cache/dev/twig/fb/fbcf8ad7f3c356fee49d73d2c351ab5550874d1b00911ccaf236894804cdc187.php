@@ -1,6 +1,6 @@
 <?php
 
-/* UserBundle:Security:login.html.twig */
+/* FOSUserBundle:Security:login.html.twig */
 class __TwigTemplate_53d9b1a2cbde73fa51fdf79b47625e2a0761a36bf88b194040e130a9e88157a2 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -8,7 +8,7 @@ class __TwigTemplate_53d9b1a2cbde73fa51fdf79b47625e2a0761a36bf88b194040e130a9e88
         parent::__construct($env);
 
         // line 1
-        $this->parent = $this->loadTemplate("FOSUserBundle::layout.html.twig", "UserBundle:Security:login.html.twig", 1);
+        $this->parent = $this->loadTemplate("FOSUserBundle::layout.html.twig", "FOSUserBundle:Security:login.html.twig", 1);
         $this->blocks = array(
             'fos_user_content' => array($this, 'block_fos_user_content'),
         );
@@ -21,20 +21,20 @@ class __TwigTemplate_53d9b1a2cbde73fa51fdf79b47625e2a0761a36bf88b194040e130a9e88
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_c1fd89359fefd04cbbc0afb0024023cbd77c44a1ce9fa776c0e94860cb403b37 = $this->env->getExtension("native_profiler");
-        $__internal_c1fd89359fefd04cbbc0afb0024023cbd77c44a1ce9fa776c0e94860cb403b37->enter($__internal_c1fd89359fefd04cbbc0afb0024023cbd77c44a1ce9fa776c0e94860cb403b37_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "UserBundle:Security:login.html.twig"));
+        $__internal_947d74f3b959b1d930a44c218a6892d570f82df9b6b20b16565d86ebab2fbcde = $this->env->getExtension("native_profiler");
+        $__internal_947d74f3b959b1d930a44c218a6892d570f82df9b6b20b16565d86ebab2fbcde->enter($__internal_947d74f3b959b1d930a44c218a6892d570f82df9b6b20b16565d86ebab2fbcde_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "FOSUserBundle:Security:login.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_c1fd89359fefd04cbbc0afb0024023cbd77c44a1ce9fa776c0e94860cb403b37->leave($__internal_c1fd89359fefd04cbbc0afb0024023cbd77c44a1ce9fa776c0e94860cb403b37_prof);
+        $__internal_947d74f3b959b1d930a44c218a6892d570f82df9b6b20b16565d86ebab2fbcde->leave($__internal_947d74f3b959b1d930a44c218a6892d570f82df9b6b20b16565d86ebab2fbcde_prof);
 
     }
 
     // line 5
     public function block_fos_user_content($context, array $blocks = array())
     {
-        $__internal_0ef7552d64b8366c52848471efd53a0240f989bf7366aaaf85d6c3f68e92cc71 = $this->env->getExtension("native_profiler");
-        $__internal_0ef7552d64b8366c52848471efd53a0240f989bf7366aaaf85d6c3f68e92cc71->enter($__internal_0ef7552d64b8366c52848471efd53a0240f989bf7366aaaf85d6c3f68e92cc71_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "fos_user_content"));
+        $__internal_92f406c6ce8c6d99d14ada10ae7531883a2dcb82be5f24cddb4de4c381d4d81d = $this->env->getExtension("native_profiler");
+        $__internal_92f406c6ce8c6d99d14ada10ae7531883a2dcb82be5f24cddb4de4c381d4d81d->enter($__internal_92f406c6ce8c6d99d14ada10ae7531883a2dcb82be5f24cddb4de4c381d4d81d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "fos_user_content"));
 
         // line 6
         if ((isset($context["error"]) ? $context["error"] : $this->getContext($context, "error"))) {
@@ -55,42 +55,34 @@ class __TwigTemplate_53d9b1a2cbde73fa51fdf79b47625e2a0761a36bf88b194040e130a9e88
         echo twig_escape_filter($this->env, (isset($context["csrf_token"]) ? $context["csrf_token"] : $this->getContext($context, "csrf_token")), "html", null, true);
         echo "\" />
 
-    <label for=\"username\">";
-        // line 13
-        echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("security.login.username", array(), "FOSUserBundle"), "html", null, true);
-        echo "</label>
     <input type=\"text\" id=\"username\" name=\"_username\" value=\"";
-        // line 14
+        // line 13
         echo twig_escape_filter($this->env, (isset($context["last_username"]) ? $context["last_username"] : $this->getContext($context, "last_username")), "html", null, true);
-        echo "\" required=\"required\" />
+        echo "\" placeholder=\"Nom utilisateur\" required=\"required\" />
 
-    <label for=\"password\">";
-        // line 16
-        echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("security.login.password", array(), "FOSUserBundle"), "html", null, true);
-        echo "</label>
-    <input type=\"password\" id=\"password\" name=\"_password\" required=\"required\" />
+    <input type=\"password\" id=\"password\" name=\"_password\" placeholder=\"Mot de passe\"  required=\"required\" />
 
     <input type=\"checkbox\" id=\"remember_me\" name=\"_remember_me\" value=\"on\" />
     <label for=\"remember_me\">";
-        // line 20
+        // line 18
         echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("security.login.remember_me", array(), "FOSUserBundle"), "html", null, true);
         echo "</label>
 
     <input type=\"submit\" id=\"_submit\" name=\"_submit\" value=\"";
-        // line 22
+        // line 20
         echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("security.login.submit", array(), "FOSUserBundle"), "html", null, true);
         echo "\" />
 </form>
 <br>
 ";
         
-        $__internal_0ef7552d64b8366c52848471efd53a0240f989bf7366aaaf85d6c3f68e92cc71->leave($__internal_0ef7552d64b8366c52848471efd53a0240f989bf7366aaaf85d6c3f68e92cc71_prof);
+        $__internal_92f406c6ce8c6d99d14ada10ae7531883a2dcb82be5f24cddb4de4c381d4d81d->leave($__internal_92f406c6ce8c6d99d14ada10ae7531883a2dcb82be5f24cddb4de4c381d4d81d_prof);
 
     }
 
     public function getTemplateName()
     {
-        return "UserBundle:Security:login.html.twig";
+        return "FOSUserBundle:Security:login.html.twig";
     }
 
     public function isTraitable()
@@ -100,7 +92,7 @@ class __TwigTemplate_53d9b1a2cbde73fa51fdf79b47625e2a0761a36bf88b194040e130a9e88
 
     public function getDebugInfo()
     {
-        return array (  81 => 22,  76 => 20,  69 => 16,  64 => 14,  60 => 13,  55 => 11,  51 => 10,  48 => 9,  42 => 7,  40 => 6,  34 => 5,  11 => 1,);
+        return array (  73 => 20,  68 => 18,  60 => 13,  55 => 11,  51 => 10,  48 => 9,  42 => 7,  40 => 6,  34 => 5,  11 => 1,);
     }
 }
 /* {% extends "FOSUserBundle::layout.html.twig" %}*/
@@ -115,11 +107,9 @@ class __TwigTemplate_53d9b1a2cbde73fa51fdf79b47625e2a0761a36bf88b194040e130a9e88
 /* <form action="{{ path("fos_user_security_check") }}" method="post">*/
 /*     <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />*/
 /* */
-/*     <label for="username">{{ 'security.login.username'|trans }}</label>*/
-/*     <input type="text" id="username" name="_username" value="{{ last_username }}" required="required" />*/
+/*     <input type="text" id="username" name="_username" value="{{ last_username }}" placeholder="Nom utilisateur" required="required" />*/
 /* */
-/*     <label for="password">{{ 'security.login.password'|trans }}</label>*/
-/*     <input type="password" id="password" name="_password" required="required" />*/
+/*     <input type="password" id="password" name="_password" placeholder="Mot de passe"  required="required" />*/
 /* */
 /*     <input type="checkbox" id="remember_me" name="_remember_me" value="on" />*/
 /*     <label for="remember_me">{{ 'security.login.remember_me'|trans }}</label>*/

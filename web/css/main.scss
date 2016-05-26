@@ -467,10 +467,58 @@ aside ul{
   display: none;
 }
 
+footer{
+  height: 200px;
+  background: url('../img/footer.png');
+  text-align: center;
+  color: #fff;
+}
+
+.footer{
+  display: inline-block;
+  margin-top: 20px;
+}
+
+footer p{
+  display: inline-block;
+  font-size: 0.8rem;
+}
+
+footer ul{
+  padding: 15px;
+}
+
+footer li{
+  display: inline-block;
+}
+
+.menuFooter{
+  font-size: 0.9rem;
+}
+
+.menuSocial li{
+  padding: 5px;
+}
+
+footer .border{
+  display: inline-block;
+  height: 1px;
+  width: 370px;
+  background-color: #fff;
+}
+
+.registerPopUp, .loginPopUp{
+  display: none;
+}
+
 /*************************** V E R S I O N  T A B L E T T E ***********************/
 
 @media only screen and (min-width:640px) {
   .top .menu, .logo, .cookType, .cookTypeSubmit,.topText, .chief{
+    display: none;
+  }
+
+  aside{
     display: none;
   }
 
@@ -1081,9 +1129,7 @@ aside ul{
     width: 130px;
     margin-top: 80px;
     margin-left:20px;
-
   }
-
   .contactImg2{
     position: absolute;
     text-align: left;
@@ -1106,6 +1152,82 @@ aside ul{
     font-size: 0.8rem;
     margin-left: 70px;
   }
+  /************************* POP UP *****************************/
+  .loginPopUp, .registerPopUp{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+    z-index: 9998;
+    color: #000;
+  }
+
+  .modal-content {
+    text-align: center;
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    width: 15%; /* Could be more or less, depending on screen size */
+    z-index: 9999;
+  }
+
+  .modal-content input[type=text], .modal-content input[type=submit], .modal-content input[type=password], .modal-content input[type=email]{
+    height: 1.5vw;
+    font-size: auto;
+    width: 80%;
+    max-width: border-box;
+    display: block;
+    margin: 10px;
+  }
+
+  .close{
+    position:absolute;
+    margin-left: 80px;
+  }
+
+  .pmodal1{
+    font-size: 1rem;
+    color: grey;
+    padding: 20px;
+  }
+
+  .pmodal2{
+    font-size: 0.8rem;
+    color:red;
+    padding-bottom: 30px;
+  }
+  .modal-content input[name=name]{
+    text-transform: uppercase;
+  }
+
+  .modal-content input[type=submit]{
+    cursor: pointer;
+    background-color: #E33C44;
+    border: none;
+    border-radius: 5px;
+    color: #fefefe;
+    margin-top: 7px;
+  }
+
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    margin-top: -5%;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #3aaddb;
+    text-decoration: none;
+    cursor: pointer;
+  }
 
 }
 
@@ -1114,6 +1236,10 @@ aside ul{
 @media only screen and (min-width:930px) {
   .famousChief{
     height: 600px;
+  }
+
+  aside{
+    display: none;
   }
 
   .contactChief{

@@ -9,3 +9,11 @@ cook4us_working:
 cook4us_hygiene:
     path: /hygiene
     defaults: { _controller: Cook4usBundle:Index:hygiene }
+
+cook4us_mention:
+    path: /mention
+    defaults: { _controller: Cook4usBundle:Index:mention }
+
+cook4us_connexion:
+    path: /connexion
+    defaults: { _controller: Cook4usBundle:Index:connexion }

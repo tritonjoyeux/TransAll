@@ -18,26 +18,31 @@ class __TwigTemplate_4251e09684dbbb42720f890018cf6bf172512c3b668c0e04ea080dc6f0f
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_e7209cd1726991d7448952d6bb3c67657b8e88b88da7a700e50ea2d6d8bc247a = $this->env->getExtension("native_profiler");
-        $__internal_e7209cd1726991d7448952d6bb3c67657b8e88b88da7a700e50ea2d6d8bc247a->enter($__internal_e7209cd1726991d7448952d6bb3c67657b8e88b88da7a700e50ea2d6d8bc247a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "Cook4usBundle:Default:index.html.twig"));
+        $__internal_baf1bc8ec1c46b97d9a0608c76c0651f03828cc872a69e33bfa1b84f33459172 = $this->env->getExtension("native_profiler");
+        $__internal_baf1bc8ec1c46b97d9a0608c76c0651f03828cc872a69e33bfa1b84f33459172->enter($__internal_baf1bc8ec1c46b97d9a0608c76c0651f03828cc872a69e33bfa1b84f33459172_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "Cook4usBundle:Default:index.html.twig"));
 
         // line 1
         $this->displayBlock('head', $context, $blocks);
-        // line 20
+        // line 21
         echo "
 ";
-        // line 21
+        // line 22
         $this->displayBlock('container', $context, $blocks);
+        // line 374
+        echo "
+";
+        // line 375
+        $this->loadTemplate("Cook4usBundle:Base:footer.html.twig", "Cook4usBundle:Default:index.html.twig", 375)->display($context);
         
-        $__internal_e7209cd1726991d7448952d6bb3c67657b8e88b88da7a700e50ea2d6d8bc247a->leave($__internal_e7209cd1726991d7448952d6bb3c67657b8e88b88da7a700e50ea2d6d8bc247a_prof);
+        $__internal_baf1bc8ec1c46b97d9a0608c76c0651f03828cc872a69e33bfa1b84f33459172->leave($__internal_baf1bc8ec1c46b97d9a0608c76c0651f03828cc872a69e33bfa1b84f33459172_prof);
 
     }
 
     // line 1
     public function block_head($context, array $blocks = array())
     {
-        $__internal_9db4177df0a3c56fe69b3c0d94844a78cf65b35b4ebe4b3cab1c727b82981e2e = $this->env->getExtension("native_profiler");
-        $__internal_9db4177df0a3c56fe69b3c0d94844a78cf65b35b4ebe4b3cab1c727b82981e2e->enter($__internal_9db4177df0a3c56fe69b3c0d94844a78cf65b35b4ebe4b3cab1c727b82981e2e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "head"));
+        $__internal_7bcaebc66fde3da3935d2316278aa051adbefb14d62698a9c8fbe0bfbee8a5be = $this->env->getExtension("native_profiler");
+        $__internal_7bcaebc66fde3da3935d2316278aa051adbefb14d62698a9c8fbe0bfbee8a5be->enter($__internal_7bcaebc66fde3da3935d2316278aa051adbefb14d62698a9c8fbe0bfbee8a5be_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "head"));
 
         // line 2
         echo "    <!DOCTYPE html>
@@ -82,38 +87,42 @@ class __TwigTemplate_4251e09684dbbb42720f890018cf6bf172512c3b668c0e04ea080dc6f0f
         // line 16
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("js/menuMobile.js"), "html", null, true);
         echo "\"></script>
+    <script src=\"";
+        // line 17
+        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("js/modales.js"), "html", null, true);
+        echo "\"></script>
 </head>
 
 ";
         
-        $__internal_9db4177df0a3c56fe69b3c0d94844a78cf65b35b4ebe4b3cab1c727b82981e2e->leave($__internal_9db4177df0a3c56fe69b3c0d94844a78cf65b35b4ebe4b3cab1c727b82981e2e_prof);
+        $__internal_7bcaebc66fde3da3935d2316278aa051adbefb14d62698a9c8fbe0bfbee8a5be->leave($__internal_7bcaebc66fde3da3935d2316278aa051adbefb14d62698a9c8fbe0bfbee8a5be_prof);
 
     }
 
     // line 7
     public function block_title($context, array $blocks = array())
     {
-        $__internal_7002840fee415103f9ea5272dc750592608d26f091d30f3ce42b1265c19b1e97 = $this->env->getExtension("native_profiler");
-        $__internal_7002840fee415103f9ea5272dc750592608d26f091d30f3ce42b1265c19b1e97->enter($__internal_7002840fee415103f9ea5272dc750592608d26f091d30f3ce42b1265c19b1e97_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_42abeb2915573c1525a2ac8bdb61f2e5a8ea3cde0f3f23fe51f19bb2dba33707 = $this->env->getExtension("native_profiler");
+        $__internal_42abeb2915573c1525a2ac8bdb61f2e5a8ea3cde0f3f23fe51f19bb2dba33707->enter($__internal_42abeb2915573c1525a2ac8bdb61f2e5a8ea3cde0f3f23fe51f19bb2dba33707_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         echo "Accueil";
         
-        $__internal_7002840fee415103f9ea5272dc750592608d26f091d30f3ce42b1265c19b1e97->leave($__internal_7002840fee415103f9ea5272dc750592608d26f091d30f3ce42b1265c19b1e97_prof);
+        $__internal_42abeb2915573c1525a2ac8bdb61f2e5a8ea3cde0f3f23fe51f19bb2dba33707->leave($__internal_42abeb2915573c1525a2ac8bdb61f2e5a8ea3cde0f3f23fe51f19bb2dba33707_prof);
 
     }
 
-    // line 21
+    // line 22
     public function block_container($context, array $blocks = array())
     {
-        $__internal_986882310170656612c0583e305e03107c4e51fa2900df9292a65e84bceefb9c = $this->env->getExtension("native_profiler");
-        $__internal_986882310170656612c0583e305e03107c4e51fa2900df9292a65e84bceefb9c->enter($__internal_986882310170656612c0583e305e03107c4e51fa2900df9292a65e84bceefb9c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "container"));
+        $__internal_b07971a36b0bcf77542cdd859fa713fe3524c877d59bcc5ccd1b9b460d9c27db = $this->env->getExtension("native_profiler");
+        $__internal_b07971a36b0bcf77542cdd859fa713fe3524c877d59bcc5ccd1b9b460d9c27db->enter($__internal_b07971a36b0bcf77542cdd859fa713fe3524c877d59bcc5ccd1b9b460d9c27db_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "container"));
 
-        // line 22
+        // line 23
         echo "<aside class=\"menuAside\">
     <ul class=\"ulClose\">
         <li class=\"close\"><i class=\"fa fa-times\" aria-hidden=\"true\"></i></li>
         <li class=\"menuLogo\"><img src=\"";
-        // line 25
+        // line 26
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/logoTablette.png"), "html", null, true);
         echo "\"></li>
     </ul>
@@ -128,16 +137,39 @@ class __TwigTemplate_4251e09684dbbb42720f890018cf6bf172512c3b668c0e04ea080dc6f0f
 </aside>
 
 <section class=\"top\">
+    <div class=\"registerPopUp\">
+        <div class=\"modal-content\">
+            <p class=\"pmodal1\">Pas encore de compte ?</p>
+            <p class=\"pmodal2\">Inscrivez-vous!</p>
+            <span class=\"close\">x</span>
+            ";
+        // line 44
+        echo $this->env->getExtension('actions')->renderUri($this->env->getExtension('routing')->getUrl("fos_user_registration_register"), array());
+        // line 45
+        echo "        </div>
+    </div>
+    <div class=\"loginPopUp\">
+        <div class=\"modal-content\">
+            <p class=\"pmodal1\">Déjà membre ?</p>
+            <p class=\"pmodal2\">Connectez-vous!</p>
+            <span class=\"close\">x</span>
+            ";
+        // line 52
+        echo $this->env->getExtension('actions')->renderUri($this->env->getExtension('routing')->getUrl("fos_user_security_login"), array());
+        // line 53
+        echo "        </div>
+    </div>
 
     <section class=\"menuTablet\">
         <ul>
             <li>COMMENT ÇA MARCHE ?</li>
-            <li>NOTRE ÉQUIPE</li>
+            <li>HYGIÈNE</li>
             <li><img src=\"";
-        // line 43
+        // line 60
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/logoTablette.png"), "html", null, true);
         echo "\"></li>
-            <li>CONNEXION</li>
+            <li id=\"logIn\">CONNEXION</li>
+            <li id=\"register\">INSCRIPTION</li>
             <li><button class=\"chiefTab\">DEVENIR CHEF</button></li>
         </ul>
     </section>
@@ -151,7 +183,7 @@ class __TwigTemplate_4251e09684dbbb42720f890018cf6bf172512c3b668c0e04ea080dc6f0f
         </a>
     </ul>
     <div class=\"logo\"><img src=\"";
-        // line 57
+        // line 75
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/logo.png"), "html", null, true);
         echo "\"></div>
     <p class=\"topText\">Ne vous occupez plus<br> jamais du dîner, laissez<br>
@@ -170,19 +202,19 @@ class __TwigTemplate_4251e09684dbbb42720f890018cf6bf172512c3b668c0e04ea080dc6f0f
     <p class=\"pFindTab\">TROUVEZ LE COOKIST QUI VOUS CORRESPOND</p>
     <ul class=\"findTab\">
         <li class=\"tab1\"><img src=\"";
-        // line 73
+        // line 91
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/cook4us-tablette_81.png"), "html", null, true);
         echo "\"><p class=\"chooseTab\">CHOISISSEZ VOTRE TYPE DE CUISINE</p></li>
         <li class=\"tab2\"><img src=\"";
-        // line 74
+        // line 92
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/cook4us-tablette_80.png"), "html", null, true);
         echo "\"><p class=\"chooseTab2\">CHERCHEZ LE COOKIST ADAPTÉ</p></li>
         <li class=\"tab3\"> <img src=\"";
-        // line 75
+        // line 93
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/cook4us-tablette_09.png"), "html", null, true);
         echo "\"><p class=\"chooseTab3\">IL CUISINE POUR VOUS</p></li>
         <li> <img src=\"";
-        // line 76
+        // line 94
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/cook4us-tablette_82.png"), "html", null, true);
         echo "\"><p class=\"chooseTab4\">PAIEMENT VIA LE SITE OU L'APPLI</p></li>
     </ul>
@@ -191,7 +223,7 @@ class __TwigTemplate_4251e09684dbbb42720f890018cf6bf172512c3b668c0e04ea080dc6f0f
         <div class=\"gallery-cell\">
             <p class=\"find\"> TROUVEZ LE COOKIST QUI VOUS CORRESPOND </p>
             <img src=\"";
-        // line 82
+        // line 100
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/cook4us-tablette_81.png"), "html", null, true);
         echo "\">
             <p class=\"choose\">CHOISISSEZ VOTRE TYPE DE CUISINE</p>
@@ -199,7 +231,7 @@ class __TwigTemplate_4251e09684dbbb42720f890018cf6bf172512c3b668c0e04ea080dc6f0f
         <div class=\"gallery-cell\">
             <p class=\"find\"> TROUVEZ LE COOKIST QUI VOUS CORRESPOND</p>
             <img src=\"";
-        // line 87
+        // line 105
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/cook4us-tablette_80.png"), "html", null, true);
         echo "\">
             <p class=\"choose\">CHERCHEZ LE COOKIST ADAPTÉ</p>
@@ -207,7 +239,7 @@ class __TwigTemplate_4251e09684dbbb42720f890018cf6bf172512c3b668c0e04ea080dc6f0f
         <div class=\"gallery-cell\">
             <p class=\"find\"> TROUVEZ LE COOKIST QUI VOUS CORRESPOND</p>
             <img src=\"";
-        // line 92
+        // line 110
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/cook4us-tablette_09.png"), "html", null, true);
         echo "\">
             <p class=\"choose\">IL CUISINE POUR VOUS</p>
@@ -215,7 +247,7 @@ class __TwigTemplate_4251e09684dbbb42720f890018cf6bf172512c3b668c0e04ea080dc6f0f
         <div class=\"gallery-cell\">
             <p class=\"find\"> TROUVEZ LE COOKIST QUI VOUS CORRESPOND</p>
             <img src=\"";
-        // line 97
+        // line 115
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/cook4us-tablette_82.png"), "html", null, true);
         echo "\">
             <p class=\"choose\">PAIEMENT VIA LE SITE OU L'APPLI</p>
@@ -228,7 +260,7 @@ class __TwigTemplate_4251e09684dbbb42720f890018cf6bf172512c3b668c0e04ea080dc6f0f
     <div class=\"chiefMobile\">
         <article class=\"imgPeople\">
             <img  src=\"";
-        // line 107
+        // line 125
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/People1.png"), "html", null, true);
         echo "\">
             <p class=\"pStyle\">Japan style</p>
@@ -237,7 +269,7 @@ class __TwigTemplate_4251e09684dbbb42720f890018cf6bf172512c3b668c0e04ea080dc6f0f
 
         <article class=\"imgPeople2\">
             <img src=\"";
-        // line 113
+        // line 131
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/People2.png"), "html", null, true);
         echo "\">
             <p class=\"pStyle\">Le plaisir français</p>
@@ -246,7 +278,7 @@ class __TwigTemplate_4251e09684dbbb42720f890018cf6bf172512c3b668c0e04ea080dc6f0f
 
         <article class=\"imgPeople3\">
             <img src=\"";
-        // line 119
+        // line 137
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/People3.png"), "html", null, true);
         echo "\">
             <p class=\"pStyle\">Pas qu'un sandwich</p>
@@ -256,7 +288,7 @@ class __TwigTemplate_4251e09684dbbb42720f890018cf6bf172512c3b668c0e04ea080dc6f0f
 
         <article class=\"imgPeople4\">
             <img src=\"";
-        // line 126
+        // line 144
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/People4.png"), "html", null, true);
         echo "\">
             <p class=\"pStyle\">Meat avant tout</p>
@@ -273,12 +305,12 @@ class __TwigTemplate_4251e09684dbbb42720f890018cf6bf172512c3b668c0e04ea080dc6f0f
                 <div class=\"rectangle\"><p class=\"price\">à partir de</p><p class=\"price2\"> 25€</p></div>
                 <div class=\"triangle\"></div>
                 <img class=\"ramen\" src=\"";
-        // line 140
+        // line 158
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/RamenTablette.png"), "html", null, true);
         echo "\">
                 <p class=\"nameChief\">Michael</p>
                 <img  class=\"michael\" src=\"";
-        // line 142
+        // line 160
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/People1.png"), "html", null, true);
         echo "\">
                 <div class=\"textTablette\">
@@ -292,12 +324,12 @@ class __TwigTemplate_4251e09684dbbb42720f890018cf6bf172512c3b668c0e04ea080dc6f0f
                 <div class=\"rectangle\"><p class=\"price\">à partir de</p><p class=\"price2\"> 20€</p></div>
                 <div class=\"triangle\"></div>
                 <img class=\"sandwich\" src=\"";
-        // line 153
+        // line 171
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/SandwichTablette.png"), "html", null, true);
         echo "\">
                 <p class=\"nameChief\">Antoine</p>
                 <img  class=\"michael\" src=\"";
-        // line 155
+        // line 173
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/People3.png"), "html", null, true);
         echo "\">
                 <div class=\"textTablette\">
@@ -311,12 +343,12 @@ class __TwigTemplate_4251e09684dbbb42720f890018cf6bf172512c3b668c0e04ea080dc6f0f
                 <div class=\"rectangle\"><p class=\"price\">à partir de</p><p class=\"price2\"> 30€</p></div>
                 <div class=\"triangle\"></div>
                 <img class=\"salade\" src=\"";
-        // line 166
+        // line 184
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/SaladeTablette.png"), "html", null, true);
         echo "\">
                 <p class=\"nameChief\">Emilie</p>
                 <img  class=\"michael\" src=\"";
-        // line 168
+        // line 186
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/People2.png"), "html", null, true);
         echo "\">
                 <div class=\"textTablette\">
@@ -330,12 +362,12 @@ class __TwigTemplate_4251e09684dbbb42720f890018cf6bf172512c3b668c0e04ea080dc6f0f
                 <div class=\"rectangle\"><p class=\"price\">à partir de</p><p class=\"price2\"> 18€</p></div>
                 <div class=\"triangle\"></div>
                 <img class=\"hamburger\" src=\"";
-        // line 179
+        // line 197
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/HamburgerTablette.png"), "html", null, true);
         echo "\">
                 <p class=\"nameChief\">Kate</p>
                 <img  class=\"michael\" src=\"";
-        // line 181
+        // line 199
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/People5.png"), "html", null, true);
         echo "\">
                 <div class=\"textTablette\">
@@ -349,12 +381,12 @@ class __TwigTemplate_4251e09684dbbb42720f890018cf6bf172512c3b668c0e04ea080dc6f0f
                 <div class=\"rectangle\"><p class=\"price\">à partir de</p><p class=\"price2\"> 40€</p></div>
                 <div class=\"triangle\"></div>
                 <img class=\"viande\" src=\"";
-        // line 192
+        // line 210
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/ViandeTablette.png"), "html", null, true);
         echo "\">
                 <p class=\"nameChief\">Jordan</p>
                 <img  class=\"michael\" src=\"";
-        // line 194
+        // line 212
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/People4.png"), "html", null, true);
         echo "\">
                 <div class=\"textTablette\">
@@ -368,12 +400,12 @@ class __TwigTemplate_4251e09684dbbb42720f890018cf6bf172512c3b668c0e04ea080dc6f0f
                 <div class=\"rectangle\"><p class=\"price\">à partir de</p><p class=\"price2\"> 40€</p></div>
                 <div class=\"triangle\"></div>
                 <img class=\"oeuf\" src=\"";
-        // line 205
+        // line 223
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/OeufTablette.png"), "html", null, true);
         echo "\">
                 <p class=\"nameChief\">Kanye</p>
                 <img  class=\"michael\" src=\"";
-        // line 207
+        // line 225
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/People6.png"), "html", null, true);
         echo "\">
                 <div class=\"textTablette\">
@@ -397,31 +429,31 @@ class __TwigTemplate_4251e09684dbbb42720f890018cf6bf172512c3b668c0e04ea080dc6f0f
     <div class=\"carousel\">
         <div id=\"showcase\" class=\"noselect\">
             <img class=\"cloud9-item\" src=\"";
-        // line 228
+        // line 246
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/1.png"), "html", null, true);
         echo "\" alt=\"1\">
             <img class=\"cloud9-item\" src=\"";
-        // line 229
+        // line 247
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/2.png"), "html", null, true);
         echo "\" alt=\"2\">
             <img class=\"cloud9-item\" src=\"";
-        // line 230
+        // line 248
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/3.png"), "html", null, true);
         echo "\" alt=\"3\">
             <img class=\"cloud9-item\" src=\"";
-        // line 231
+        // line 249
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/4.png"), "html", null, true);
         echo "\" alt=\"4\">
             <img class=\"cloud9-item\" src=\"";
-        // line 232
+        // line 250
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/5.png"), "html", null, true);
         echo "\" alt=\"5\">
             <img class=\"cloud9-item\" src=\"";
-        // line 233
+        // line 251
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/6.png"), "html", null, true);
         echo "\" alt=\"6\">
             <img class=\"cloud9-item\" src=\"";
-        // line 234
+        // line 252
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/7.png"), "html", null, true);
         echo "\" alt=\"7\">
         </div>
@@ -430,31 +462,31 @@ class __TwigTemplate_4251e09684dbbb42720f890018cf6bf172512c3b668c0e04ea080dc6f0f
     <div class=\"carouselTablette\">
         <ul>
             <li><img src=\"";
-        // line 240
+        // line 258
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/4Tablette.png"), "html", null, true);
         echo "\" alt=\"1\"></li>
             <li><img src=\"";
-        // line 241
+        // line 259
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/2Tablette.png"), "html", null, true);
         echo "\" alt=\"2\"></li>
             <li><img src=\"";
-        // line 242
+        // line 260
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/3Tablette.png"), "html", null, true);
         echo "\" alt=\"3\"></li>
             <li><img src=\"";
-        // line 243
+        // line 261
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/1Tablette.png"), "html", null, true);
         echo "\" alt=\"4\"></li>
             <li><img src=\"";
-        // line 244
+        // line 262
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/5Tablette.png"), "html", null, true);
         echo "\" alt=\"5\"></li>
             <li><img src=\"";
-        // line 245
+        // line 263
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/6Tablette.png"), "html", null, true);
         echo "\" alt=\"6\"></li>
             <li><img src=\"";
-        // line 246
+        // line 264
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/7Tablette.png"), "html", null, true);
         echo "\" alt=\"7\"></li>
         </ul>
@@ -477,7 +509,7 @@ class __TwigTemplate_4251e09684dbbb42720f890018cf6bf172512c3b668c0e04ea080dc6f0f
 
 <section class=\"certified\">
     <img src=\"";
-        // line 266
+        // line 284
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/IconeCertified.png"), "html", null, true);
         echo "\" alt=\"certified\">
     <h1> NOS COOKIST SONT CERTIFIÉS !</h1>
@@ -492,7 +524,7 @@ class __TwigTemplate_4251e09684dbbb42720f890018cf6bf172512c3b668c0e04ea080dc6f0f
 
     <div class=\"appli\">
         <img class=\"appliImg\" src=\"";
-        // line 278
+        // line 296
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/app.png"), "html", null, true);
         echo "\">
         <div class=\"appliText\">
@@ -502,7 +534,7 @@ class __TwigTemplate_4251e09684dbbb42720f890018cf6bf172512c3b668c0e04ea080dc6f0f
                 à l'avance et tout sera prêt.<br> Vous pouvez vous détendre</p>
             <p class=\"trust\"> Nous n'attendons plus que vous !
                 <img class=\"googleplay\" src=\"";
-        // line 285
+        // line 303
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/GooglePlay.png"), "html", null, true);
         echo "\"><img class=\"appstore\" src=\"";
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/AppStore.png"), "html", null, true);
@@ -519,7 +551,7 @@ class __TwigTemplate_4251e09684dbbb42720f890018cf6bf172512c3b668c0e04ea080dc6f0f
         <p class=\"join\">Rejoignez notre communauté de cookist dès maintenant</p>
         <p class=\"site\">Postulez sur <span class=\"siteName\">www.cook4us/cookist.fr</span></p>
         <img src=\"";
-        // line 297
+        // line 315
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/Certification.png"), "html", null, true);
         echo "\">
     </div>
@@ -530,11 +562,11 @@ class __TwigTemplate_4251e09684dbbb42720f890018cf6bf172512c3b668c0e04ea080dc6f0f
     <div class=\"imgSelect\">
 
         <div class=\"contactImg\"><img src=\"";
-        // line 305
+        // line 323
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/photo1.png"), "html", null, true);
         echo "\"></div>
         <div class=\"contactImg2\"><img src=\"";
-        // line 306
+        // line 324
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/photo2.png"), "html", null, true);
         echo "\"></div>
 
@@ -585,10 +617,9 @@ class __TwigTemplate_4251e09684dbbb42720f890018cf6bf172512c3b668c0e04ea080dc6f0f
     </div>
 </section>
 
-
 ";
         
-        $__internal_986882310170656612c0583e305e03107c4e51fa2900df9292a65e84bceefb9c->leave($__internal_986882310170656612c0583e305e03107c4e51fa2900df9292a65e84bceefb9c_prof);
+        $__internal_b07971a36b0bcf77542cdd859fa713fe3524c877d59bcc5ccd1b9b460d9c27db->leave($__internal_b07971a36b0bcf77542cdd859fa713fe3524c877d59bcc5ccd1b9b460d9c27db_prof);
 
     }
 
@@ -597,9 +628,14 @@ class __TwigTemplate_4251e09684dbbb42720f890018cf6bf172512c3b668c0e04ea080dc6f0f
         return "Cook4usBundle:Default:index.html.twig";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  538 => 306,  534 => 305,  523 => 297,  506 => 285,  496 => 278,  481 => 266,  458 => 246,  454 => 245,  450 => 244,  446 => 243,  442 => 242,  438 => 241,  434 => 240,  425 => 234,  421 => 233,  417 => 232,  413 => 231,  409 => 230,  405 => 229,  401 => 228,  377 => 207,  372 => 205,  358 => 194,  353 => 192,  339 => 181,  334 => 179,  320 => 168,  315 => 166,  301 => 155,  296 => 153,  282 => 142,  277 => 140,  260 => 126,  250 => 119,  241 => 113,  232 => 107,  219 => 97,  211 => 92,  203 => 87,  195 => 82,  186 => 76,  182 => 75,  178 => 74,  174 => 73,  155 => 57,  138 => 43,  117 => 25,  112 => 22,  106 => 21,  94 => 7,  83 => 16,  79 => 15,  75 => 14,  71 => 13,  67 => 12,  62 => 10,  58 => 9,  54 => 8,  50 => 7,  43 => 2,  37 => 1,  30 => 21,  27 => 20,  25 => 1,);
+        return array (  570 => 324,  566 => 323,  555 => 315,  538 => 303,  528 => 296,  513 => 284,  490 => 264,  486 => 263,  482 => 262,  478 => 261,  474 => 260,  470 => 259,  466 => 258,  457 => 252,  453 => 251,  449 => 250,  445 => 249,  441 => 248,  437 => 247,  433 => 246,  409 => 225,  404 => 223,  390 => 212,  385 => 210,  371 => 199,  366 => 197,  352 => 186,  347 => 184,  333 => 173,  328 => 171,  314 => 160,  309 => 158,  292 => 144,  282 => 137,  273 => 131,  264 => 125,  251 => 115,  243 => 110,  235 => 105,  227 => 100,  218 => 94,  214 => 93,  210 => 92,  206 => 91,  187 => 75,  169 => 60,  160 => 53,  158 => 52,  149 => 45,  147 => 44,  126 => 26,  121 => 23,  115 => 22,  103 => 7,  92 => 17,  88 => 16,  84 => 15,  80 => 14,  76 => 13,  72 => 12,  67 => 10,  63 => 9,  59 => 8,  55 => 7,  48 => 2,  42 => 1,  35 => 375,  32 => 374,  30 => 22,  27 => 21,  25 => 1,);
     }
 }
 /* {% block head %}*/
@@ -618,6 +654,7 @@ class __TwigTemplate_4251e09684dbbb42720f890018cf6bf172512c3b668c0e04ea080dc6f0f
 /*     <script src="{{ asset('js/jquery.cloud9carousel.js') }}"></script>*/
 /*     <script src="{{ asset('js/carousel.js') }}"></script>*/
 /*     <script src="{{ asset('js/menuMobile.js') }}"></script>*/
+/*     <script src="{{ asset('js/modales.js') }}"></script>*/
 /* </head>*/
 /* */
 /* {% endblock %}*/
@@ -639,13 +676,30 @@ class __TwigTemplate_4251e09684dbbb42720f890018cf6bf172512c3b668c0e04ea080dc6f0f
 /* </aside>*/
 /* */
 /* <section class="top">*/
+/*     <div class="registerPopUp">*/
+/*         <div class="modal-content">*/
+/*             <p class="pmodal1">Pas encore de compte ?</p>*/
+/*             <p class="pmodal2">Inscrivez-vous!</p>*/
+/*             <span class="close">x</span>*/
+/*             {% render url('fos_user_registration_register') %}*/
+/*         </div>*/
+/*     </div>*/
+/*     <div class="loginPopUp">*/
+/*         <div class="modal-content">*/
+/*             <p class="pmodal1">Déjà membre ?</p>*/
+/*             <p class="pmodal2">Connectez-vous!</p>*/
+/*             <span class="close">x</span>*/
+/*             {% render url('fos_user_security_login') %}*/
+/*         </div>*/
+/*     </div>*/
 /* */
 /*     <section class="menuTablet">*/
 /*         <ul>*/
 /*             <li>COMMENT ÇA MARCHE ?</li>*/
-/*             <li>NOTRE ÉQUIPE</li>*/
+/*             <li>HYGIÈNE</li>*/
 /*             <li><img src="{{ asset('img/logoTablette.png') }}"></li>*/
-/*             <li>CONNEXION</li>*/
+/*             <li id="logIn">CONNEXION</li>*/
+/*             <li id="register">INSCRIPTION</li>*/
 /*             <li><button class="chiefTab">DEVENIR CHEF</button></li>*/
 /*         </ul>*/
 /*     </section>*/
@@ -956,5 +1010,6 @@ class __TwigTemplate_4251e09684dbbb42720f890018cf6bf172512c3b668c0e04ea080dc6f0f
 /*     </div>*/
 /* </section>*/
 /* */
-/* */
 /* {% endblock %}*/
+/* */
+/* {% include 'Cook4usBundle:Base:footer.html.twig' %}*/

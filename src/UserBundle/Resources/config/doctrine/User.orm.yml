@@ -15,8 +15,9 @@ UserBundle\Entity\User:
         imageName:
             type: string
             length: 255
-        chief:
-            type: integer
+        roleUser:
+            type: string
+            length: 255
         adresse:
             type: string
             length: 255

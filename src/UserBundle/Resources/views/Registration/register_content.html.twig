@@ -1,8 +1,27 @@
 {% trans_default_domain 'FOSUserBundle' %}
 
 {{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register'}}) }}
-    {{ form_widget(form) }}
-    <div>
-        <input type="submit" value="{{ 'registration.submit'|trans }}" />
-    </div>
+
+    {{ form_widget(form.username,{'attr': {'placeholder':'Nom utitilsateur'}}) }}
+    {{ form_errors(form.username) }}
+<br>
+    {{ form_widget(form.email, {'attr': {'placeholder':'Email', 'class': 'adresse'}}) }}
+    {{ form_errors(form.email) }}
+<br>
+    {{ form_widget(form.adresse, {'attr': {'placeholder':'Adresse du domicile'}}) }}
+    {{ form_errors(form.adresse) }}
+<br>
+    {{ form_widget(form.plainPassword.first, {'attr': {'placeholder':'Mot de passe'}}) }}
+    {{ form_errors(form.plainPassword.first) }}
+<br>
+
+    {{ form_widget(form.plainPassword.second, {'attr': {'placeholder':'Vérification'}}) }}
+<br>
+<div>
+    <label for="fos_user_registration_form_roleUser">Cookist ?</label>
+    {{ form_widget(form.roleUser) }}
+    {{ form_errors(form.roleUser) }}
+    <br>
+    <input type="submit" value="{{ 'registration.submit'|trans }}" />
+</div>
 {{ form_end(form) }}

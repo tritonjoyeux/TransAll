@@ -14,6 +14,7 @@
     <script src="{{ asset('js/jquery.cloud9carousel.js') }}"></script>
     <script src="{{ asset('js/carousel.js') }}"></script>
     <script src="{{ asset('js/menuMobile.js') }}"></script>
+    <script src="{{ asset('js/modales.js') }}"></script>
 </head>
 
 {% endblock %}
@@ -35,13 +36,30 @@
 </aside>
 
 <section class="top">
+    <div class="registerPopUp">
+        <div class="modal-content">
+            <p class="pmodal1">Pas encore de compte ?</p>
+            <p class="pmodal2">Inscrivez-vous!</p>
+            <span class="close">x</span>
+            {% render url('fos_user_registration_register') %}
+        </div>
+    </div>
+    <div class="loginPopUp">
+        <div class="modal-content">
+            <p class="pmodal1">Déjà membre ?</p>
+            <p class="pmodal2">Connectez-vous!</p>
+            <span class="close">x</span>
+            {% render url('fos_user_security_login') %}
+        </div>
+    </div>
 
     <section class="menuTablet">
         <ul>
             <li>COMMENT ÇA MARCHE ?</li>
-            <li>NOTRE ÉQUIPE</li>
+            <li>HYGIÈNE</li>
             <li><img src="{{ asset('img/logoTablette.png') }}"></li>
-            <li>CONNEXION</li>
+            <li id="logIn">CONNEXION</li>
+            <li id="register">INSCRIPTION</li>
             <li><button class="chiefTab">DEVENIR CHEF</button></li>
         </ul>
     </section>
@@ -352,5 +370,6 @@
     </div>
 </section>
 
-
 {% endblock %}
+
+{% include 'Cook4usBundle:Base:footer.html.twig' %}

@@ -124,6 +124,16 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'Cook4usBundle\\Controller\\IndexController::hygieneAction',  '_route' => 'cook4us_hygiene',);
         }
 
+        // cook4us_mention
+        if ($pathinfo === '/mention') {
+            return array (  '_controller' => 'Cook4usBundle\\Controller\\IndexController::mentionAction',  '_route' => 'cook4us_mention',);
+        }
+
+        // cook4us_connexion
+        if ($pathinfo === '/connexion') {
+            return array (  '_controller' => 'Cook4usBundle\\Controller\\IndexController::connexionAction',  '_route' => 'cook4us_connexion',);
+        }
+
         if (0 === strpos($pathinfo, '/message')) {
             // message_homepage
             if ($pathinfo === '/messages') {

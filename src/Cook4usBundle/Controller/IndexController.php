@@ -20,4 +20,14 @@ class IndexController extends Controller
     {
         return $this->render('Cook4usBundle:Hygiene:index.html.twig');
     }
+
+    public function mentionAction()
+    {
+        return $this->render('Cook4usBundle:Mention:index.html.twig');
+    }
+
+    public function connexionAction()
+    {
+        return $this->render('Cook4usBundle:ConnexionMobile:index.html.twig');
+    }
 }
