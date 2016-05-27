@@ -30,4 +30,9 @@ class IndexController extends Controller
     {
         return $this->render('Cook4usBundle:ConnexionMobile:index.html.twig');
     }
+
+    public function chefAction()
+    {
+        return $this->render('Cook4usBundle:Chef:index.html.twig');
+    }
 }

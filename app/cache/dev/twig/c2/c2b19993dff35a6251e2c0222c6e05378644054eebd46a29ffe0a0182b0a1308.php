@@ -15,37 +15,45 @@ class __TwigTemplate_05d49ad3c21a935ea84972b1dcebb178cf195938a8885ed2cee5d5478a0
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_c9dba5c93a6c890033969826f31a23ce4b2ba302d50521f9acb511a3f30347c5 = $this->env->getExtension("native_profiler");
-        $__internal_c9dba5c93a6c890033969826f31a23ce4b2ba302d50521f9acb511a3f30347c5->enter($__internal_c9dba5c93a6c890033969826f31a23ce4b2ba302d50521f9acb511a3f30347c5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "Cook4usBundle:Base:menu.html.twig"));
+        $__internal_56a1679f81f410605887aa5f707aefbad88fccacb4cff09e5dd9b90ca916498d = $this->env->getExtension("native_profiler");
+        $__internal_56a1679f81f410605887aa5f707aefbad88fccacb4cff09e5dd9b90ca916498d->enter($__internal_56a1679f81f410605887aa5f707aefbad88fccacb4cff09e5dd9b90ca916498d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "Cook4usBundle:Base:menu.html.twig"));
 
         // line 1
         echo "<header>
-    <a href=\"/\"><img src=\"";
-        // line 2
-        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/logo.png"), "html", null, true);
-        echo "\" class=\"logo\" alt=\"logo\"></a>
-
-    <div class=\"burger\">
-        <hr class=\"croix1\">
-        <hr class=\"croix2\">
-        <hr class=\"croix3\">
-    </div>
-    <nav class=\"nav1\">
-        <ul>
-            <li>
-                <button class='download'>TELECHARGER L'APPLI</button>
-            </li>
-            <li>
-                <button class='become'>DEVENIR CHEF</button>
-            </li>
-            <li><a href=\"/connexion\">CONNEXION</a></li>
-            <li><a href=\"/working\">COMMENT CA MARCHE ?</a></li>
-            <li><a href=\"/hygiene\">HYGIENE</a></li>
+    <aside class=\"menuAside\">
+        <ul class=\"ulClose\">
+            <li class=\"close\"><i class=\"fa fa-times\" aria-hidden=\"true\"></i></li>
+            <li class=\"menuLogo\"><a href=\"/\"><img src=\"";
+        // line 5
+        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/logoTablette.png"), "html", null, true);
+        echo "\"></a></li>
         </ul>
-    </nav>
+
+        <ul class=\"menuApp\">
+            <li><button class=\"download\">TÉLÉCHARGER L'APPLI</button></li>
+            <li><button class=\"become\">DEVENIR CHEF</button></li>
+            <li class=\"connexion\" id=\"logIn\">CONNEXION</li>
+            <li class=\"connexion\" id=\"register\"></li>
+            <li class=\"connexion\">COMMENT ÇA MARCHE</li>
+            <li class=\"connexion\"><a href=\"/hygiene\">HYGIÈNE</a></li>
+        </ul>
+    </aside>
+
+    <ul class=\"menu\">
+        <a href=\"#\">
+            <li></li>
+            <li></li>
+            <li></li>
+        </a>
+    </ul>
+    <div class=\"logoHygiene\"><img src=\"";
+        // line 25
+        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/logoTablette.png"), "html", null, true);
+        echo "\"></div>
+
 </header>";
         
-        $__internal_c9dba5c93a6c890033969826f31a23ce4b2ba302d50521f9acb511a3f30347c5->leave($__internal_c9dba5c93a6c890033969826f31a23ce4b2ba302d50521f9acb511a3f30347c5_prof);
+        $__internal_56a1679f81f410605887aa5f707aefbad88fccacb4cff09e5dd9b90ca916498d->leave($__internal_56a1679f81f410605887aa5f707aefbad88fccacb4cff09e5dd9b90ca916498d_prof);
 
     }
 
@@ -61,28 +69,33 @@ class __TwigTemplate_05d49ad3c21a935ea84972b1dcebb178cf195938a8885ed2cee5d5478a0
 
     public function getDebugInfo()
     {
-        return array (  25 => 2,  22 => 1,);
+        return array (  51 => 25,  28 => 5,  22 => 1,);
     }
 }
 /* <header>*/
-/*     <a href="/"><img src="{{ asset("img/logo.png") }}" class="logo" alt="logo"></a>*/
-/* */
-/*     <div class="burger">*/
-/*         <hr class="croix1">*/
-/*         <hr class="croix2">*/
-/*         <hr class="croix3">*/
-/*     </div>*/
-/*     <nav class="nav1">*/
-/*         <ul>*/
-/*             <li>*/
-/*                 <button class='download'>TELECHARGER L'APPLI</button>*/
-/*             </li>*/
-/*             <li>*/
-/*                 <button class='become'>DEVENIR CHEF</button>*/
-/*             </li>*/
-/*             <li><a href="/connexion">CONNEXION</a></li>*/
-/*             <li><a href="/working">COMMENT CA MARCHE ?</a></li>*/
-/*             <li><a href="/hygiene">HYGIENE</a></li>*/
+/*     <aside class="menuAside">*/
+/*         <ul class="ulClose">*/
+/*             <li class="close"><i class="fa fa-times" aria-hidden="true"></i></li>*/
+/*             <li class="menuLogo"><a href="/"><img src="{{ asset('img/logoTablette.png') }}"></a></li>*/
 /*         </ul>*/
-/*     </nav>*/
+/* */
+/*         <ul class="menuApp">*/
+/*             <li><button class="download">TÉLÉCHARGER L'APPLI</button></li>*/
+/*             <li><button class="become">DEVENIR CHEF</button></li>*/
+/*             <li class="connexion" id="logIn">CONNEXION</li>*/
+/*             <li class="connexion" id="register"></li>*/
+/*             <li class="connexion">COMMENT ÇA MARCHE</li>*/
+/*             <li class="connexion"><a href="/hygiene">HYGIÈNE</a></li>*/
+/*         </ul>*/
+/*     </aside>*/
+/* */
+/*     <ul class="menu">*/
+/*         <a href="#">*/
+/*             <li></li>*/
+/*             <li></li>*/
+/*             <li></li>*/
+/*         </a>*/
+/*     </ul>*/
+/*     <div class="logoHygiene"><img src="{{ asset('img/logoTablette.png') }}"></div>*/
+/* */
 /* </header>*/

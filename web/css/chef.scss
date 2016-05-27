@@ -1,0 +1,123 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.pageChefbecome{
+  text-align: center;
+}
+
+.how{
+  height: 30px;
+  width: 90%;
+  background-color: #E33C44;
+  color: #fff;
+  display: inline-block;
+  padding-top: 15px;
+  margin-top: 20px;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.why{
+  height: 30px;
+  width: 90%;
+  background-color: #fff;
+  color: #E33C44;
+  display: inline-block;
+  padding-top: 15px;
+  margin-top: 10px;
+  font-size: 0.8rem;
+  border-radius: 5px;
+}
+
+hr{
+  width: 80%;
+ color:#E33C44;
+  margin-top: 30px;
+}
+
+.titre1{
+  margin-top: 20px;
+  line-height: 30px;
+}
+
+.securityChef{
+  height: auto;
+  width: 90%;
+  background-color: #fff;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.securityChef img{
+  height: 130px;
+  width: 130px;
+  margin-bottom: 10px;
+}
+
+.security1{
+  color:#E33C44;
+  padding: 20px;
+}
+
+.security2{
+  line-height: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.whyCookist{
+  height: auto;
+  width: 90%;
+  background-color: #fff;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.whyCookist img{
+  height: 100px;
+  width: 100%;
+}
+

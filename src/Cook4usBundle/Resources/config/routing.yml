@@ -17,3 +17,7 @@ cook4us_mention:
 cook4us_connexion:
     path: /connexion
     defaults: { _controller: Cook4usBundle:Index:connexion }
+
+cook4us_chef:
+    path: /chef
+    defaults: { _controller: Cook4usBundle:Index:chef }
